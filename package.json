@@ -1,0 +1,28 @@
+{
+  "name": "dsgroupteam13",
+  "version": "1.0.0",
+  "description": "Sito risotorante",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorrentmutie/DsGroupTeam13.git"
+  },
+  "author": "team 13",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sorrentmutie/DsGroupTeam13/issues"
+  },
+  "homepage": "https://github.com/sorrentmutie/DsGroupTeam13#readme",
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "jquery": "3.3.1"
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-sass": "3.1.0",
+    "gulp-util": "3.0.8"
+  }
+}
