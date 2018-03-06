@@ -1,5 +1,4 @@
 main {
-	background-color:yellow;
 	display: flex;
 	flex-grow: 1;
 }
@@ -7,4 +6,5 @@ main {
 body {
 	display: flex;
 	flex-direction: column;
+	height: 100vh;
 }
