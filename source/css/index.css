@@ -21,6 +21,11 @@
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
+main {
+  display: flex;
+  align-content: center;
+  justify-content: center; }
+
 /* CUSTOMIZE THE NAVBAR
   -------------------------------------------------- */
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
@@ -65,12 +70,13 @@
 
 .gallery {
   display: flex;
-  flex-wrap: wrap; }
-
-.imgGallery {
-  flex-grow: 0;
-  flex-shrink: 1; }
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  max-width: 900px;
+  border: 2px solid black; }
 
 .gallery picture {
   display: flex;
-  margin: 2%; }
+  flex-direction: column;
+  margin: 5px; }

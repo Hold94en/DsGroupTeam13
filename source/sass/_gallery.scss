@@ -1,13 +1,18 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  max-width: 900px;
+  border: 2px solid black;
 }
 .imgGallery {
-    
+
 }
 .gallery {
   picture {
     display: flex;
-    margin: 2%;
+    flex-direction: column;
+    margin: 5px;
   }
 }
