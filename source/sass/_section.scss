@@ -1,0 +1,63 @@
+
+
+@mixin sectionResturant($color){
+    display: flex;
+    flex-direction: column;
+
+    border-top: 15px solid $color;
+    border-bottom: $borderSecondary;
+    border-left: $borderSecondary;
+    border-right: $borderSecondary;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+
+    section{
+        .headerSection{
+            padding-bottom: 5px;
+            border-bottom: thin solid rgb(214, 213, 213);
+            margin-bottom: 5px;
+        }
+
+        article{
+            p{
+                display: flex;
+                justify-content: center;
+            }
+
+            .nameResturant{
+                font-size: 1.5em;
+                letter-spacing: 2px;
+                word-spacing: 5px;
+                text-transform: capitalize;
+            }
+
+            .locationResturant{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+            }
+
+            .valutationDiv{
+                display: flex;
+                justify-content: center;
+                padding-bottom: 15px;
+
+                .imageOpacity{
+                    opacity: 0.5;
+                }
+
+                .imageOpacity:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .ristoranteGenerico{
+        @include sectionResturant($genericResturantColor);
+    }
+}
