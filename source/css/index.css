@@ -43,6 +43,10 @@
 .navbar-wrapper .navbar .container {
   width: auto; }
 
+.navbar-custom {
+  color: white;
+  background-color: #000040; }
+
 /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
 /* Carousel base class */
