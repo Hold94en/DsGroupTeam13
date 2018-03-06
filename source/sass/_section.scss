@@ -12,34 +12,42 @@
 
 main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin: 0px auto;
+
+
+    @media screen and (min-width: 1200px){
+        flex-direction: row;
+    }
 
     section{
+        margin-bottom: 20px;
         .headerSection{
             padding-bottom: 5px;
-            border-bottom: thin solid rgb(214, 213, 213);
-            margin-bottom: 5px;
-
+            overflow: hidden;
         }
 
         article{
+            padding-top: 5px;
+            border-top: thin solid rgb(214, 213, 213);
+            //width: 95%;
+            margin: 0px auto;
+            
             p{
-                display: flex;
-                justify-content: center;
+                text-align: center;
             }
 
             .nameResturant{
-                font-size: 1.5em;
+                font-size: 2rem;
+                text-align: center;
                 letter-spacing: 2px;
                 word-spacing: 3px;
                 text-transform: capitalize;
             }
 
             .locationResturant{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-
+                font-style: oblique;
+                color: rgba(126, 120, 120, 0.767);
             }
 
             .valutationDiv{
@@ -60,9 +68,15 @@ main{
 
     .ristoranteGenerico{
         @include sectionResturant($genericResturantColor);
+        margin-right: 10px;
     }
 
     .ristorantePizzeria{
         @include sectionResturant($resturantPizzeriaColor);
+        margin-right: 10px;
+    }
+    
+    .ristorantePesce{
+        @include sectionResturant($fishResturantColor)
     }
 }

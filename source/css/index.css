@@ -1,41 +1,58 @@
 main {
   display: flex;
-  flex-direction: row; }
-  main section .headerSection {
-    padding-bottom: 5px;
-    border-bottom: thin solid #d6d5d5;
-    margin-bottom: 5px; }
-  main section article p {
-    display: flex;
-    justify-content: center; }
-  main section article .nameResturant {
-    font-size: 1.5em;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-    text-transform: capitalize; }
-  main section article .locationResturant {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-  main section article .valutationDiv {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 15px; }
-    main section article .valutationDiv .imageOpacity {
-      opacity: 0.5; }
-    main section article .valutationDiv .imageOpacity:hover {
-      opacity: 1; }
+  flex-direction: column;
+  margin: 0px auto; }
+  @media screen and (min-width: 1200px) {
+    main {
+      flex-direction: row; } }
+  main section {
+    margin-bottom: 20px; }
+    main section .headerSection {
+      padding-bottom: 5px;
+      overflow: hidden; }
+    main section article {
+      padding-top: 5px;
+      border-top: thin solid #d6d5d5;
+      margin: 0px auto; }
+      main section article p {
+        text-align: center; }
+      main section article .nameResturant {
+        font-size: 2rem;
+        text-align: center;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        text-transform: capitalize; }
+      main section article .locationResturant {
+        font-style: oblique;
+        color: rgba(126, 120, 120, 0.767); }
+      main section article .valutationDiv {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 15px; }
+        main section article .valutationDiv .imageOpacity {
+          opacity: 0.5; }
+        main section article .valutationDiv .imageOpacity:hover {
+          opacity: 1; }
   main .ristoranteGenerico {
     display: flex;
     flex-direction: column;
     border-top: 15px solid #ffd968;
     border-bottom: 2px solid darkgray;
     border-left: 2px solid darkgray;
-    border-right: 2px solid darkgray; }
+    border-right: 2px solid darkgray;
+    margin-right: 10px; }
   main .ristorantePizzeria {
     display: flex;
     flex-direction: column;
     border-top: 15px solid tomato;
+    border-bottom: 2px solid darkgray;
+    border-left: 2px solid darkgray;
+    border-right: 2px solid darkgray;
+    margin-right: 10px; }
+  main .ristorantePesce {
+    display: flex;
+    flex-direction: column;
+    border-top: 15px solid #70a6ff;
     border-bottom: 2px solid darkgray;
     border-left: 2px solid darkgray;
     border-right: 2px solid darkgray; }
