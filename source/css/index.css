@@ -11,7 +11,7 @@ main {
   main section article .nameResturant {
     font-size: 1.5em;
     letter-spacing: 2px;
-    word-spacing: 5px;
+    word-spacing: 3px;
     text-transform: capitalize; }
   main section article .locationResturant {
     display: flex;
@@ -29,6 +29,13 @@ main {
     display: flex;
     flex-direction: column;
     border-top: 15px solid #ffd968;
+    border-bottom: 2px solid darkgray;
+    border-left: 2px solid darkgray;
+    border-right: 2px solid darkgray; }
+  main .ristorantePizzeria {
+    display: flex;
+    flex-direction: column;
+    border-top: 15px solid tomato;
     border-bottom: 2px solid darkgray;
     border-left: 2px solid darkgray;
     border-right: 2px solid darkgray; }

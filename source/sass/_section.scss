@@ -19,6 +19,7 @@ main{
             padding-bottom: 5px;
             border-bottom: thin solid rgb(214, 213, 213);
             margin-bottom: 5px;
+
         }
 
         article{
@@ -30,7 +31,7 @@ main{
             .nameResturant{
                 font-size: 1.5em;
                 letter-spacing: 2px;
-                word-spacing: 5px;
+                word-spacing: 3px;
                 text-transform: capitalize;
             }
 
@@ -59,5 +60,9 @@ main{
 
     .ristoranteGenerico{
         @include sectionResturant($genericResturantColor);
+    }
+
+    .ristorantePizzeria{
+        @include sectionResturant($resturantPizzeriaColor);
     }
 }
