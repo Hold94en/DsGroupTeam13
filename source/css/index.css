@@ -6,7 +6,9 @@ main {
     main {
       flex-direction: row; } }
   main section {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    border-radius: 10px;
+    min-width: 345px; }
     main section .headerSection {
       padding-bottom: 5px;
       overflow: hidden; }
