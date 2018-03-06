@@ -62,3 +62,12 @@
   top: 0;
   left: 0;
   min-width: 100%; }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap; }
+
+.imgGallery {
+  width: 96%;
+  height: auto;
+  margin: 2%; }
