@@ -1,5 +1,25 @@
 footer {
+	background-color: $darkColor;
+	color: $textColorlight;
 	display: flex;
-	background-color: black;
-	color: white;
+	flex-direction: column;
+	text-align: center;
+}
+footer .credits-title {
+	flex-grow: 1;
+}
+footer .credits {
+	flex-grow:1;
+	margin: auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+footer .credits .entry {
+	margin: 10px;
+}
+
+@media all and (max-width: 400px) {
+	footer .credits {
+		grid-template-columns: auto auto;
+	}
 }
