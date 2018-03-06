@@ -68,6 +68,9 @@
   flex-wrap: wrap; }
 
 .imgGallery {
-  width: 96%;
-  height: auto;
+  flex-grow: 0;
+  flex-shrink: 1; }
+
+.gallery picture {
+  display: flex;
   margin: 2%; }

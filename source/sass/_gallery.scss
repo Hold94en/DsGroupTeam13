@@ -1,9 +1,13 @@
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
 }
-.imgGallery{
-    width: 96%;
-    height: auto;
+.imgGallery {
+    
+}
+.gallery {
+  picture {
+    display: flex;
     margin: 2%;
+  }
 }
