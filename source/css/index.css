@@ -2,9 +2,6 @@ main {
   display: flex;
   flex-direction: column;
   margin: 0px auto; }
-  @media screen and (min-width: 1200px) {
-    main {
-      flex-direction: row; } }
   main section {
     margin-bottom: 20px;
     border-radius: 10px;

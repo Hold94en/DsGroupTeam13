@@ -1,9 +1,6 @@
-
-
 @mixin sectionResturant($color){
     display: flex;
     flex-direction: column;
-
     border-top: 15px solid $color;
     border-bottom: $borderSecondary;
     border-left: $borderSecondary;
@@ -15,15 +12,11 @@ main{
     flex-direction: column;
     margin: 0px auto;
 
-
-    @media screen and (min-width: 1200px){
-        flex-direction: row;
-    }
-
     section{
         margin-bottom: 20px;
         border-radius: 10px;
         min-width: 345px;
+
         .headerSection{
             padding-bottom: 5px;
             overflow: hidden;
@@ -32,7 +25,6 @@ main{
         article{
             padding-top: 5px;
             border-top: thin solid rgb(214, 213, 213);
-            //width: 95%;
             margin: 0px auto;
             
             p{
@@ -79,6 +71,6 @@ main{
     }
     
     .ristorantePesce{
-        @include sectionResturant($fishResturantColor)
+        @include sectionResturant($fishResturantColor);
     }
 }
