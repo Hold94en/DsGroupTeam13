@@ -1,0 +1,31 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+/* importazione dei custom fonts */
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+body {
+    color: $secondary;
+    font-family: 'Signika', sans-serif;
+}
+
+/* overriding delle regole di stilizzazione dei bottoni di Bootstrap */
+.btn-primary {
+    color: $secondary;
+    background-color: $primary;
+    border-color: $secondary;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: $secondary;
+    background-color: $primary;
+    border-color: $secondary;
+}
+
+/* overriding delle regole di stilizzazione dei panel di Bootstrap */
+
+.panel-default>.panel-heading {
+    color: $secondary;
+    background-color: $primary;
+    border-color: $secondary;
+}

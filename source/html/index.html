@@ -12,13 +12,127 @@
 
 	<title>La Forcheita</title>
 
+	<!-- Bootstrap core CSS -->
+	<link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
 	<!-- Custom styles for this template -->
 	<link href="../css/index.css" rel="stylesheet">
 </head>
 
 <body>
+	<header>
+		<div class="navbar-wrapper">
+			<div class="container">
+				<nav class="navbar navbar-default navbar-static-top">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+							 aria-controls="navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="index.html">LA FORCHEITA</a>
+						</div>
+						<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a href="#about">Chi siamo</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+	</header>
 	<main>
-		
+
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-ristorante">
+			Launch demo modal
+		</button>
+
+		<!-- Modal -->
+		<!--nome indirizzo gallery descrizione array recensioni*/-->
+		<div class="modal fade" id="modal-ristorante" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+
+						<h4 class="modal-title" id="modal-ristorante-nome">NOME RISTORANTE</h4>
+						<span id="modal-ristorante-rating">rating</span>
+					</div>
+					<div class="modal-body">
+
+						<div id="carousel-restaurant" class="carousel slide" data-ride="carousel" data-interval="false">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-restaurant" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-restaurant" data-slide-to="1"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="../img/restaurants/restaurant1/chairs-2179044.jpg" alt="...">
+								</div>
+								<div class="item">
+									<img src="../img/restaurants/restaurant1/pexels-photo-225448.jpeg" alt="...">
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-restaurant" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-restaurant" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+						<section class="modal-ristorante-contenuti">
+							<div id="modal-ristorante-descrizione">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, dignissimos dolores itaque error aspernatur sit obcaecati
+								quae ducimus explicabo, tempore libero laudantium ea. Reprehenderit assumenda, nobis eligendi non possimus exercitationem?
+							</div>
+							<div>
+								Ci troviamo in
+								<span id="modal-ristorante-indirizzo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+							</div>
+						</section>
+
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											Collapsible Group Item #1
+										</a>
+									</h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									<div class="panel-body">
+										Prima recensione
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+						<button type="button" class="btn btn-primary">Prenota</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 	<footer>
 		<div class="credits-title">
@@ -52,9 +166,8 @@
 		</div>
 	</footer>
 
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+	<script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="../js/fetchLocation.js"></script>
 	<script src="../js/index.js"></script>
 </body>
