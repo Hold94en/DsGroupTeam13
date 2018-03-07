@@ -13,9 +13,22 @@ footer .credits {
 	margin: auto;
 	display: grid;
 	grid-template-columns: auto auto auto auto;
+	padding-bottom: 10px;
 }
 footer .credits .entry {
-	margin: 10px;
+	color: $textColorlight;
+	text-decoration: none;
+	padding: 10px;
+}
+footer .credits a:hover {
+	background-color: $lightColor;
+}
+footer .credits .entry .entry-pic {
+	margin: auto;
+}
+footer .credits .entry .entry-pic img {
+	height: 50px;
+	border-radius: 10px;
 }
 
 @media all and (max-width: 400px) {
