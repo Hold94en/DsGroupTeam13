@@ -1,5 +1,21 @@
 /* CUSTOMIZE THE NAVBAR
   -------------------------------------------------- */
+.navbar-default .navbar-brand {
+  color: black;
+  font-weight: 900;
+}
+
+.nav.navbar-nav li a {
+  color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+.navbar-toggle {
+  border: 0px;
+}
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -21,9 +37,4 @@
 }
 .navbar-wrapper .navbar .container {
   width: auto;
-}
-
-.navbar-custom {
-  color: white;
-  background-color: $primaryColor;
 }

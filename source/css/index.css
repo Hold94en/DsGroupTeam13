@@ -1,5 +1,6 @@
 /* RESPONSIVE CSS
   -------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Signika");
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
@@ -21,8 +22,43 @@
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
+/* importazione dei custom fonts */
+body {
+  color: #000000;
+  font-family: 'Signika', sans-serif; }
+
+/* overriding delle regole di stilizzazione dei bottoni di Bootstrap */
+.btn-primary {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #000000; }
+
+.btn-primary.focus, .btn-primary:focus {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #000000; }
+
+/* overriding delle regole di stilizzazione dei panel di Bootstrap */
+.panel-default > .panel-heading {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #000000; }
+
 /* CUSTOMIZE THE NAVBAR
   -------------------------------------------------- */
+.navbar-default .navbar-brand {
+  color: black;
+  font-weight: 900; }
+
+.nav.navbar-nav li a {
+  color: black; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black; }
+
+.navbar-toggle {
+  border: 0px; }
+
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: absolute;
@@ -42,10 +78,6 @@
 
 .navbar-wrapper .navbar .container {
   width: auto; }
-
-.navbar-custom {
-  color: white;
-  background-color: #000040; }
 
 /* CUSTOMIZE INTRO CAROUSEL 
   -------------------------------------------------- */
@@ -67,7 +99,8 @@
 
   -------------------------------------------------- */
 #modal-ristorante .carousel {
-  height: 300px; }
+  height: 300px;
+  margin-bottom: 10px; }
 
 #modal-ristorante .carousel .item {
   height: 300px;
@@ -76,3 +109,10 @@
 #modal-ristorante .carousel-inner > .item > img {
   min-width: 100%;
   height: 300px; }
+
+#modal-ristorante .modal-content {
+  display: flex;
+  flex-direction: column; }
+
+.modal-ristorante-contenuti * {
+  margin-bottom: 10px; }
