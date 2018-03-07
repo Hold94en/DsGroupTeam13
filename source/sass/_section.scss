@@ -1,0 +1,120 @@
+//Questa mixin ha le informazioni a comune tra le section e si occupa poi di andare a specializzare il colore, 
+//in base al fatto che sia un ristorante di pesce, una pizzeria o un ristorante generico
+@mixin sectionResturant($color){
+    display: flex;
+    border-top: 15px solid $color;
+    border-bottom: $borderSecondary;
+    border-left: $borderSecondary;
+    border-right: $borderSecondary;
+    flex-grow: 1;
+
+    //Quando è attivo questa media query ho una visualizzazione smartphone con le immagini in alto
+    @media screen and (max-width: 499px){
+        flex-direction: column;
+    }
+
+    //Quando è attiva questa media query ho una visualizzazione desktop dell'elemento e dunque vado a porre
+    //il testo da visualizzare a sinistra del componente, mentre a destra è mostrata una fascia.
+    @media screen and (min-width: 500px){
+        flex-direction: row-reverse;
+    }
+}
+
+#containerSection{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+
+    @media screen and (max-width: 649px){
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 650px){
+        flex-direction: row;
+    }
+
+    section{
+        margin: 0px 5px 20px 5px;
+        border-radius: 10px;
+
+
+        //Questa classe appartiene all'header della section, ossia all'immagine del componente.
+        .headerSection{
+            @media screen and (max-width: 499px) {
+                padding-bottom: 5px;
+                border-radius: 0px;
+            }
+            border-bottom-right-radius: 10px;
+            overflow: hidden;
+        }
+
+        article{
+            padding-top: 5px;
+            border-top: thin solid rgb(214, 213, 213);
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            p{
+                text-align: center;
+                padding: 0px 5px;
+            }
+
+            //Questa classe è una classe che va a specificare lo stile per il paragrafo del titolo
+            .nameResturant{
+                font-size: 1.8rem;
+                text-align: center;
+                letter-spacing: 2px;
+                word-spacing: 3px;
+                text-transform: capitalize;
+            }
+
+            //Questa classe mi permette di specializzare lo stile del paragrafo della via del ristorante
+            .locationResturant{
+                font-style: oblique;
+                color: rgba(126, 120, 120, 0.767);
+            }
+
+            //Questa classe si applica al div che contiene le stelline di valutazione ed essenzialmente fa da 
+            //contenitore.
+            .valutationDiv{
+                display: flex;
+                justify-content: center;
+                padding-bottom: 15px;
+                color: rgb(250, 185, 46);
+                font-size: 2.5rem;
+
+                //Questa classe si applica alla singola stellina e mi permette di andare ad ottenere un effetto
+                //opaco.
+                .imageOpacity{
+                    opacity: 0.5;
+                }
+
+                .imageOpacity:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    //Classe relativa al ristorante generico
+    .ristoranteGenerico{
+        @include sectionResturant($genericResturantColor);
+    }
+
+    //Classe relativa alla pizzeria
+    .ristorantePizzeria{
+        @include sectionResturant($resturantPizzeriaColor);
+    }
+    
+    //Classe relativa al ristorante di pesce
+    .ristorantePesce{
+        @include sectionResturant($fishResturantColor);
+    }
+}
+
+html{
+    width: 100vw;
+    max-width: 100vw;
+}

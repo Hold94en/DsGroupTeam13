@@ -1,7 +1,100 @@
 /* colori principali utilizzati nell'applicazione */
+@import url("https://fonts.googleapis.com/css?family=Signika");
+#containerSection {
+  display: flex;
+  margin: 0 auto;
+  width: 100%; }
+  @media screen and (max-width: 649px) {
+    #containerSection {
+      flex-direction: column; } }
+  @media screen and (min-width: 650px) {
+    #containerSection {
+      flex-direction: row; } }
+  #containerSection section {
+    margin: 0px 5px 20px 5px;
+    border-radius: 10px; }
+    #containerSection section .headerSection {
+      border-bottom-right-radius: 10px;
+      overflow: hidden; }
+      @media screen and (max-width: 499px) {
+        #containerSection section .headerSection {
+          padding-bottom: 5px;
+          border-radius: 0px; } }
+    #containerSection section article {
+      padding-top: 5px;
+      border-top: thin solid #d6d5d5;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #containerSection section article p {
+        text-align: center;
+        padding: 0px 5px; }
+      #containerSection section article .nameResturant {
+        font-size: 1.8rem;
+        text-align: center;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        text-transform: capitalize; }
+      #containerSection section article .locationResturant {
+        font-style: oblique;
+        color: rgba(126, 120, 120, 0.767); }
+      #containerSection section article .valutationDiv {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 15px;
+        color: #fab92e;
+        font-size: 2.5rem; }
+        #containerSection section article .valutationDiv .imageOpacity {
+          opacity: 0.5; }
+        #containerSection section article .valutationDiv .imageOpacity:hover {
+          opacity: 1; }
+  #containerSection .ristoranteGenerico {
+    display: flex;
+    border-top: 15px solid #ffd968;
+    border-bottom: 2px solid darkgray;
+    border-left: 2px solid darkgray;
+    border-right: 2px solid darkgray;
+    flex-grow: 1; }
+    @media screen and (max-width: 499px) {
+      #containerSection .ristoranteGenerico {
+        flex-direction: column; } }
+    @media screen and (min-width: 500px) {
+      #containerSection .ristoranteGenerico {
+        flex-direction: row-reverse; } }
+  #containerSection .ristorantePizzeria {
+    display: flex;
+    border-top: 15px solid tomato;
+    border-bottom: 2px solid darkgray;
+    border-left: 2px solid darkgray;
+    border-right: 2px solid darkgray;
+    flex-grow: 1; }
+    @media screen and (max-width: 499px) {
+      #containerSection .ristorantePizzeria {
+        flex-direction: column; } }
+    @media screen and (min-width: 500px) {
+      #containerSection .ristorantePizzeria {
+        flex-direction: row-reverse; } }
+  #containerSection .ristorantePesce {
+    display: flex;
+    border-top: 15px solid #70a6ff;
+    border-bottom: 2px solid darkgray;
+    border-left: 2px solid darkgray;
+    border-right: 2px solid darkgray;
+    flex-grow: 1; }
+    @media screen and (max-width: 499px) {
+      #containerSection .ristorantePesce {
+        flex-direction: column; } }
+    @media screen and (min-width: 500px) {
+      #containerSection .ristorantePesce {
+        flex-direction: row-reverse; } }
+
+html {
+  width: 100vw;
+  max-width: 100vw; }
+
 /* RESPONSIVE CSS
   -------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Signika");
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
@@ -20,15 +113,6 @@
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4; } }
-
-main {
-  display: flex;
-  flex-grow: 1; }
-
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh; }
 
 footer {
   background-color: #000000;
@@ -71,7 +155,7 @@ footer .credits .entry .entry-pic img {
 /* importazione dei custom fonts */
 body {
   color: #000000;
-  font-family: 'Signika', sans-serif; }
+  font-family: "Signika", sans-serif; }
 
 /* overriding delle regole di stilizzazione dei bottoni di Bootstrap */
 .btn-primary {
@@ -79,7 +163,8 @@ body {
   background-color: #ffffff;
   border-color: #000000; }
 
-.btn-primary.focus, .btn-primary:focus {
+.btn-primary.focus,
+.btn-primary:focus {
   color: #000000;
   background-color: #ffffff;
   border-color: #000000; }
@@ -89,6 +174,13 @@ body {
   color: #000000;
   background-color: #ffffff;
   border-color: #000000; }
+
+main {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1; }
 
 /* CUSTOMIZE THE NAVBAR
   -------------------------------------------------- */
@@ -129,8 +221,10 @@ body {
   -------------------------------------------------- */
 /* Carousel base class */
 .carousel {
-  height: 500px;
-  margin-bottom: 60px; }
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  box-shadow: 0px 0px 10px 0px #333333; }
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -138,7 +232,6 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
   background-color: #777; }
 
 /* CUSTOMIZE MODAL CAROUSEL 
@@ -156,9 +249,55 @@ body {
   min-width: 100%;
   height: 300px; }
 
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%; }
+
 #modal-ristorante .modal-content {
   display: flex;
   flex-direction: column; }
 
 .modal-ristorante-contenuti * {
   margin-bottom: 10px; }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0px auto; }
+
+.gallery picture {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  box-shadow: 0px 0px 10px 0px #333333; }
+
+.comments {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s ease; }
+  .comments p {
+    font-size: 2rem;
+    display: none;
+    color: white; }
+
+picture:hover .comments {
+  opacity: 0.6;
+  background-color: black; }
+  picture:hover .comments p {
+    display: block; }
+
+.gallery a {
+  display: flex; }
