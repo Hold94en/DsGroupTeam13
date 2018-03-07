@@ -3,7 +3,8 @@
 
 /* Carousel base class */
 .carousel {
- 
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 60px;
   box-shadow: $shadowBox;
 }
