@@ -4,35 +4,45 @@ footer {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-}
-footer .credits-title {
-	flex-grow: 1;
-}
-footer .credits {
-	flex-grow:1;
-	margin: auto;
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	padding-bottom: 10px;
-}
-footer .credits .entry {
-	color: $primary;
-	text-decoration: none;
-	padding: 10px;
-}
-footer .credits a:hover {
-	background-color: $secondaryLight;
-}
-footer .credits .entry .entry-pic {
-	margin: auto;
-}
-footer .credits .entry .entry-pic img {
-	height: 50px;
-	border-radius: 10px;
-}
 
-@media all and (max-width: 400px) {
-	footer .credits {
-		grid-template-columns: auto auto;
+	.credits-title {
+		flex-grow: 1;
+	}
+	.credits {
+		flex-grow:1;
+		margin: auto;
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		padding-bottom: 10px;
+
+		.entry {
+			color: $primary;
+			text-decoration: none;
+			padding: 10px;
+
+			&:hover {
+				background-color: $secondaryLight;
+			}
+
+			.entry-pic {
+				margin: auto;
+
+				img {
+					height: 50px;
+					border-radius: 10px;
+				}
+			}
+		}
+		@media all and (max-width: 400px) {
+			grid-template-columns: auto auto;
+		}
 	}
 }
+
+
+//	@media all and (max-width: 400px) {
+//		footer .credits {
+//			grid-template-columns: auto auto;
+//		}
+//	}
+//}
