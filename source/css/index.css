@@ -2,16 +2,17 @@
 @import url("https://fonts.googleapis.com/css?family=Signika");
 #containerSection {
   display: flex;
+  justify-content: center;
   margin: 0 auto;
   width: 100%; }
-  @media screen and (max-width: 649px) {
+  @media screen and (max-width: 879px) {
     #containerSection {
       flex-direction: column; } }
-  @media screen and (min-width: 650px) {
+  @media screen and (min-width: 880px) {
     #containerSection {
       flex-direction: row; } }
   #containerSection section {
-    margin: 0px 5px 20px 5px;
+    margin: 0px 10px 20px 10px;
     border-radius: 10px; }
     #containerSection section .headerSection {
       border-bottom-right-radius: 10px;
@@ -26,7 +27,8 @@
       margin: 0px auto;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
+      justify-content: center;
+      width: 200px; }
       #containerSection section article p {
         text-align: center;
         padding: 0px 5px; }
@@ -52,10 +54,8 @@
   #containerSection .ristoranteGenerico {
     display: flex;
     border-top: 15px solid #ffd968;
-    border-bottom: 2px solid darkgray;
-    border-left: 2px solid darkgray;
-    border-right: 2px solid darkgray;
-    flex-grow: 1; }
+    flex-grow: 1;
+    box-shadow: 0px 0px 10px 0px #333333; }
     @media screen and (max-width: 499px) {
       #containerSection .ristoranteGenerico {
         flex-direction: column; } }
@@ -65,10 +65,8 @@
   #containerSection .ristorantePizzeria {
     display: flex;
     border-top: 15px solid tomato;
-    border-bottom: 2px solid darkgray;
-    border-left: 2px solid darkgray;
-    border-right: 2px solid darkgray;
-    flex-grow: 1; }
+    flex-grow: 1;
+    box-shadow: 0px 0px 10px 0px #333333; }
     @media screen and (max-width: 499px) {
       #containerSection .ristorantePizzeria {
         flex-direction: column; } }
@@ -78,10 +76,8 @@
   #containerSection .ristorantePesce {
     display: flex;
     border-top: 15px solid #70a6ff;
-    border-bottom: 2px solid darkgray;
-    border-left: 2px solid darkgray;
-    border-right: 2px solid darkgray;
-    flex-grow: 1; }
+    flex-grow: 1;
+    box-shadow: 0px 0px 10px 0px #333333; }
     @media screen and (max-width: 499px) {
       #containerSection .ristorantePesce {
         flex-direction: column; } }
@@ -267,6 +263,18 @@ main section {
   top: 0;
   left: 0;
   min-width: 100%; }
+
+#carousel-example-generic picture, #carousel-example-generic h1, #carousel-example-generic p {
+  transition: all 0.5s ease; }
+
+#carousel-example-generic:hover h1 {
+  font-size: 50px; }
+
+#carousel-example-generic:hover p {
+  font-size: 22px; }
+
+#carousel-example-generic:hover picture {
+  filter: blur(5px); }
 
 #modal-ristorante .modal-content {
   display: flex;
