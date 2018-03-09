@@ -1,7 +1,7 @@
 //jshint esversion: 6
 
-const getLocations = function(successClb, errorClb) {
-	const obj = {
+function getLocations(successClb, errorClb) {
+	var obj = {
 		locations:[
 			{
 				id: "1",
@@ -14,9 +14,8 @@ const getLocations = function(successClb, errorClb) {
 					postcode: "09887"
 				},
 				gallery: [
-					"../img/",
-					"../img/",
-					"../img/"
+					"../img/restaurants/restaurant1/chairs-2179044.jpg",
+					"../img/restaurants/restaurant1/pexels-photo-225448.jpeg",
 				],
 				description: "",
 				rewiews: [
@@ -87,4 +86,21 @@ const getLocations = function(successClb, errorClb) {
 	};
 	
 	successClb(obj.locations);
-};
+}
+
+function getSingularLocation(id, successClb, errorClb) {
+	//idealy i would have set up a different server request or used an existing function
+	getLocations(function(locs) {	//ask for data and send a function to run when data arrive
+		successClb(locs[id]);		//return the data to the index.js page
+	}, errorClb);
+}
+
+function stringifyObject(obj, sep = ' ') {
+	var res = '';
+	for(var o in obj) {
+		if(o) {
+			res += obj[o] + sep;
+		}
+	}
+	return res.slice(0, -sep.length);
+}
