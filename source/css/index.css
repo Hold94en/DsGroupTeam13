@@ -182,6 +182,12 @@ main {
   flex-direction: column;
   flex-grow: 1; }
 
+main heading {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: space-around; }
+
 /* CUSTOMIZE THE NAVBAR
   -------------------------------------------------- */
 .navbar-default .navbar-brand {
@@ -241,6 +247,9 @@ main {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   background-color: #777; }
+
+#carousel-intro {
+  margin-bottom: 60px; }
 
 /* CUSTOMIZE MODAL CAROUSEL 
 
