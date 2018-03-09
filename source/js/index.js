@@ -42,7 +42,15 @@ function showModalRestaurant(whichSect) {
 			reviews.append( createReviewPanel(key, rew.title, rew.text) );
 		});
 
+		//initializing carousel
+		var carousel = $('#modal_carousel_restaurant');
+		carousel.empty();
+
+		carousel.append(createCarousel(resp.gallery));
+		
 		$('#modal-ristorante').modal();
+		carousel.carousel();
+		fixForModalCarousel();
 	}, displayError);
 }
 
@@ -69,4 +77,43 @@ function createReviewPanel(key, title, text) {
 						'</div>' +
 					'</div>' +
 			'</div>';
+}
+
+function createCarousel(images) {
+//	var htmlCarousel = 	'<ol class="carousel-indicators">' +
+//							'<li data-target="#modal_carousel_restaurant" data-slide-to="0" class="active"></li>' +
+//							'<li data-target="#modal_carousel_restaurant" data-slide-to="1"></li>' +
+//						'</ol>' +
+	var htmlCarousel = 	'<div class="carousel-inner" role="listbox">';
+	for(var i=0; i < images.length; i++) {
+		if(i === 0) {
+			htmlCarousel +=	'<div class="item active">';
+		} else {
+			htmlCarousel +=	'<div class="item">';
+		}
+		htmlCarousel +=			'<img src="'+images[i]+'" alt="...">' +
+							'</div>';
+	}
+	htmlCarousel +=		'</div>' +
+					
+						'<a class="left carousel-control" href="#modal_carousel_restaurant" role="button" data-slide="prev">' +
+							'<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>' +
+							'<span class="sr-only">Previous</span>' +
+						'</a>' +
+						'<a class="right carousel-control" href="#modal_carousel_restaurant" role="button" data-slide="next">' +
+							'<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>' +
+							'<span class="sr-only">Next</span>' +
+						'</a>';
+	return htmlCarousel;
+}
+
+function fixForModalCarousel() {
+	setTimeout(function() {
+		/* Il carousel non viene inizializzato correttamente quando si effettua l'animazione
+		 * questa funzione aspetta che l'animazione venga completata prima di forzare
+		 * il cambio di immagine del carousel cliccando automaticamente su uno dei due bottoni 
+		 * per ciclare le immagini, un delay superiore a 150 dovrebbe funzionare comnque
+		*/
+		$('#modal_carousel_restaurant a:first').click();
+	}, 605);
 }
