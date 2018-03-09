@@ -251,6 +251,18 @@ main {
   left: 0;
   min-width: 100%; }
 
+#carousel-example-generic picture, #carousel-example-generic h1, #carousel-example-generic p {
+  transition: all 0.5s ease; }
+
+#carousel-example-generic:hover h1 {
+  font-size: 50px; }
+
+#carousel-example-generic:hover p {
+  font-size: 22px; }
+
+#carousel-example-generic:hover picture {
+  filter: blur(5px); }
+
 #modal-ristorante .modal-content {
   display: flex;
   flex-direction: column; }

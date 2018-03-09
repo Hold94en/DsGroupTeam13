@@ -49,3 +49,24 @@
   left: 0;
   min-width: 100%;
 }
+
+#carousel-example-generic{
+  picture, h1, p{
+    transition: all 0.5s ease;
+  }
+}
+
+
+#carousel-example-generic:hover{
+  h1{
+    font-size: 50px;
+  }
+
+  p{
+    font-size: 22px;
+  }
+
+  picture{
+    filter: blur(5px);
+  }
+}
