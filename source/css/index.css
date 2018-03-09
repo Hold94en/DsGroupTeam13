@@ -12,7 +12,7 @@
     #containerSection {
       flex-direction: row; } }
   #containerSection section {
-    margin: 0px 5px 20px 5px;
+    margin: 0px 10px 20px 10px;
     border-radius: 10px; }
     #containerSection section .headerSection {
       border-bottom-right-radius: 10px;
