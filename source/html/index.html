@@ -141,8 +141,8 @@
 			</heading>
 			<div id="containerSection" class="container">
 				<!-- NABUCCO -->
-				<section class="ristoranteGenerico">
-					<!-- https://www.thefork.it/ristorante/ristorante-nabucco/51662 -->
+				<section class="ristoranteGenerico" data-id="0">
+				<!-- https://www.thefork.it/ristorante/ristorante-nabucco/51662 -->
 
 					<picture class="headerSection">
 						<source srcset="../img/section/nabucco/headerNabuccoSmall.jpg" media="(min-width: 500px) and (max-width:1099px)">
@@ -166,7 +166,7 @@
 				</section>
 
 				<!-- TAVERNA GOURMET -->
-				<section class="ristorantePizzeria">
+				<section class="ristorantePizzeria" data-id="1">
 					<!-- https://www.thefork.it/ristorante/la-taverna-gourmet/201350 -->
 					<picture class="headerSection">
 						<source srcset="../img/section/tavernaGourmet/headerTavernaSmall.jpg" media="(min-width: 500px) and (max-width:1099px)">
@@ -189,7 +189,7 @@
 				</section>
 
 				<!-- IL FARO DI MARCO -->
-				<section class="ristorantePesce">
+				<section class="ristorantePesce" data-id="2">
 					<!-- https://www.thefork.it/ristorante/il-faro-di-marco-d-oggiono/271659 -->
 
 					<picture class="headerSection">
@@ -480,11 +480,6 @@
 			</div>
 		</section>
 
-		<!-- Button trigger modal -->
-		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-ristorante">
-			Launch demo modal
-		</button>
-
 		<!-- Modal ristorante -->
 		<!--nome indirizzo gallery descrizione array recensioni*/-->
 		<div class="modal fade" id="modal-ristorante" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -495,12 +490,14 @@
 							<span aria-hidden="true">&times;</span>
 						</button>
 
-						<h4 class="modal-title" id="modal-ristorante-nome">NOME RISTORANTE</h4>
-						<span id="modal-ristorante-rating">rating</span>
+						<h4 class="modal-title" id="modal_ristorante_nome">NOME RISTORANTE</h4>
+						<div id="modal-ristorante-rating">
+							
+						</div>
 					</div>
 					<div class="modal-body">
 
-						<div id="carousel-restaurant" class="carousel slide" data-ride="carousel" data-interval="false">
+						<div id="modal_carousel_restaurant" class="carousel slide" data-ride="carousel" data-interval="false">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
 								<li data-target="#carousel-restaurant" data-slide-to="0" class="active"></li>
@@ -508,7 +505,7 @@
 							</ol>
 
 							<!-- Wrapper for slides -->
-							<div class="carousel-inner" role="listbox">
+							<div class="carousel-inner" id="modal_carousel" role="listbox">
 								<div class="item active">
 									<img src="../img/restaurants/restaurant1/chairs-2179044.jpg" alt="...">
 								</div>
@@ -518,46 +515,32 @@
 							</div>
 
 							<!-- Controls -->
-							<a class="left carousel-control" href="#carousel-restaurant" role="button" data-slide="prev">
+							<a class="left carousel-control" href="#modal_carousel_restaurant" role="button" data-slide="prev">
 								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 								<span class="sr-only">Previous</span>
 							</a>
-							<a class="right carousel-control" href="#carousel-restaurant" role="button" data-slide="next">
+							<a class="right carousel-control" href="#modal_carousel_restaurant" role="button" data-slide="next">
 								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 								<span class="sr-only">Next</span>
 							</a>
 						</div>
 						<section class="modal-ristorante-contenuti">
-							<div id="modal-ristorante-descrizione">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, dignissimos dolores itaque error aspernatur sit obcaecati
-								quae ducimus explicabo, tempore libero laudantium ea. Reprehenderit assumenda, nobis eligendi non possimus exercitationem?
+							<div id="modal_ristorante_descrizione">
+								
 							</div>
 							<div>
 								Ci troviamo in
-								<span id="modal-ristorante-indirizzo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+								<span id="modal_ristorante_indirizzo"></span>
 							</div>
 						</section>
 
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingOne">
-									<h4 class="panel-title">
-										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-											Collapsible Group Item #1
-										</a>
-									</h4>
-								</div>
-								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-									<div class="panel-body">
-										Prima recensione
-									</div>
-								</div>
-							</div>
+						<div id="modal_reviews_box" class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							
 						</div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
-						<button type="button" class="btn btn-primary">Prenota</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Prenota</button>
 					</div>
 				</div>
 			</div>
