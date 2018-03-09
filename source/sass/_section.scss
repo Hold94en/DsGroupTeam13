@@ -3,10 +3,8 @@
 @mixin sectionResturant($color){
     display: flex;
     border-top: 15px solid $color;
-    border-bottom: $borderSecondary;
-    border-left: $borderSecondary;
-    border-right: $borderSecondary;
     flex-grow: 1;
+    box-shadow: $shadowBox;
 
     //Quando è attivo questa media query ho una visualizzazione smartphone con le immagini in alto
     @media screen and (max-width: 499px){
