@@ -264,16 +264,16 @@ main section {
   left: 0;
   min-width: 100%; }
 
-#carousel-example-generic picture, #carousel-example-generic h1, #carousel-example-generic p {
+#carousel-intro picture, #carousel-intro h1, #carousel-intro p {
   transition: all 0.5s ease; }
 
-#carousel-example-generic:hover h1 {
+#carousel-intro:hover h1 {
   font-size: 50px; }
 
-#carousel-example-generic:hover p {
+#carousel-intro:hover p {
   font-size: 22px; }
 
-#carousel-example-generic:hover picture {
+#carousel-intro:hover picture {
   filter: blur(5px); }
 
 #modal-ristorante .modal-content {
