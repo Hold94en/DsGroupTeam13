@@ -267,15 +267,20 @@ main {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  max-width: 800px;
   margin: 0px auto; }
 
-.gallery picture {
-  position: relative;
+.gallery .row-gallery {
   display: flex;
-  flex-direction: column;
-  margin: 5px;
-  box-shadow: 0px 0px 10px 0px #333333; }
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center; }
+  .gallery .row-gallery picture {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    box-shadow: 0px 0px 10px 0px #333333; }
 
 .comments {
   position: absolute;
