@@ -2,12 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=Signika");
 #containerSection {
   display: flex;
+  justify-content: center;
   margin: 0 auto;
   width: 100%; }
-  @media screen and (max-width: 649px) {
+  @media screen and (max-width: 879px) {
     #containerSection {
       flex-direction: column; } }
-  @media screen and (min-width: 650px) {
+  @media screen and (min-width: 880px) {
     #containerSection {
       flex-direction: row; } }
   #containerSection section {
@@ -26,7 +27,8 @@
       margin: 0px auto;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
+      justify-content: center;
+      width: 200px; }
       #containerSection section article p {
         text-align: center;
         padding: 0px 5px; }
