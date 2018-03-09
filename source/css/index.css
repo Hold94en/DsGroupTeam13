@@ -185,8 +185,11 @@ main {
 main heading {
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   justify-content: space-around; }
+
+main section {
+  margin-bottom: 60px; }
 
 /* CUSTOMIZE THE NAVBAR
   -------------------------------------------------- */
@@ -249,7 +252,7 @@ main heading {
   background-color: #777; }
 
 #carousel-intro {
-  margin-bottom: 60px; }
+  margin-bottom: 40px; }
 
 /* CUSTOMIZE MODAL CAROUSEL 
 
