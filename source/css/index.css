@@ -217,6 +217,14 @@ main {
 .navbar-wrapper .navbar .container {
   width: auto; }
 
+.navbar-brand {
+  padding: 2px; }
+
+#img-brand {
+  height: 48px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
 /* CUSTOMIZE INTRO CAROUSEL 
   -------------------------------------------------- */
 /* Carousel base class */
@@ -261,6 +269,28 @@ main {
 
 .modal-ristorante-contenuti * {
   margin-bottom: 10px; }
+
+#modal-about .modal-body {
+  display: flex;
+  flex-direction: column; }
+
+.modal-body heading {
+  margin-bottom: 8px; }
+
+.modal-body article {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px; }
+
+article img {
+  margin-top: 4px;
+  margin-right: 12px;
+  height: 64px;
+  vertical-align: middle; }
+
+#article-us {
+  margin-bottom: 0px;
+  justify-content: center; }
 
 .gallery {
   display: flex;

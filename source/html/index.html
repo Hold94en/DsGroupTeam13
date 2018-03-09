@@ -33,12 +33,12 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" href="index.html">LA FORCHEITA</a>
+							<a class="navbar-brand" href="index.html"><span><img src="../img/icons/my-icons-collection/png/005-cutlery.png" id="img-brand"></span><span>LA FORCHEITA</span></a>
 						</div>
 						<div id="navbar" class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li>
-									<a href="#modal-chisiamo" data-toggle="modal">Chi siamo</a>
+									<a href="#modal-about" data-toggle="modal">About</a>
 								</li>
 							</ul>
 						</div>
@@ -555,17 +555,44 @@
 		</div>
 
 		<!-- Modal chi siamo -->
-		<div class="modal fade" tabindex="-1" role="dialog" id="modal-chisiamo">
+		<div class="modal fade" tabindex="-1" role="dialog" id="modal-about">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<h4 class="modal-title">DSGroup front end development academy</h4>
+						<h3 class="modal-title">Demo sviluppata all'interno dell'Academy curata da DS Group</h3>
 					</div>
 					<div class="modal-body">
-						<p></p>
+						<heading>
+							<h4>Tecnologie utilizzate:</h4>
+						</heading>
+						<article>
+							<img src="../img/icons/bootstrap-solid.svg" alt="javascript">
+							<p>
+								<b>Bootstrap: </b> libreria di componenti per lo sviluppo front-end, è stata utilizzata per rendere il sito web più responsive, per la visualizzazione dei singoli ristoranti e di questa presentazione. 
+							</p>
+						</article>
+						<article>
+							<img src="../img/icons/my-icons-collection/png/003-html-5.png" alt="html-5">
+							<p>
+								<b>HTML5: </b> oltre ai tag storici e basilari del linguaggio, sono stati utilizzate anche le semantiche introdotte con HTML5, che vedono coinvolti per esempio i tag section, article ed heading.
+							</p>
+						</article>
+						<article>
+							<img src="../img/icons/my-icons-collection/png/002-css-3.png" alt="css-3">
+							<p>
+								<b>CSS3: anche in questo caso, oltre ai selettori standard di CSS, sono state utilizzate le proprietà flex introdotte in CSS3. </b>
+							</p>
+						</article>  
+						<article>
+							<img src="../img/icons/my-icons-collection/png/001-javascript.png" alt="javascript">
+							<p>
+								<b>Javascript: </b>
+							</p>
+						</article>
+						<article id="article-us"><h4><a href="#credits-title">Chi siamo?</a></h4></article>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -578,7 +605,7 @@
 		<!-- /.modal -->
 	</main>
 	<footer>
-		<div class="credits-title">
+		<div class="credits-title" id="#credits-title">
 			<h2>Realizzato da</h2>
 		</div>
 		<div class="credits">
