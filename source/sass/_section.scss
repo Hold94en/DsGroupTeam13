@@ -5,7 +5,7 @@
     border-top: 15px solid $color;
     flex-grow: 1;
     box-shadow: $shadowBox;
-
+    cursor: pointer;
     //Quando è attivo questa media query ho una visualizzazione smartphone con le immagini in alto
     @media screen and (max-width: 499px){
         flex-direction: column;
