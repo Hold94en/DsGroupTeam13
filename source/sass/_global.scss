@@ -37,3 +37,14 @@ main {
   flex-direction: column;
   flex-grow: 1;
 }
+
+main heading {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  justify-content: space-around;
+}
+
+main section {
+  margin-bottom: 60px;
+}

@@ -182,6 +182,15 @@ main {
   flex-direction: column;
   flex-grow: 1; }
 
+main heading {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  justify-content: space-around; }
+
+main section {
+  margin-bottom: 60px; }
+
 /* CUSTOMIZE THE NAVBAR
   -------------------------------------------------- */
 .navbar-default .navbar-brand {
@@ -217,6 +226,14 @@ main {
 .navbar-wrapper .navbar .container {
   width: auto; }
 
+.navbar-brand {
+  padding: 2px; }
+
+#img-brand {
+  height: 48px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
 /* CUSTOMIZE INTRO CAROUSEL 
   -------------------------------------------------- */
 /* Carousel base class */
@@ -233,6 +250,9 @@ main {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   background-color: #777; }
+
+#carousel-intro {
+  margin-bottom: 40px; }
 
 /* CUSTOMIZE MODAL CAROUSEL 
 
@@ -261,6 +281,28 @@ main {
 
 .modal-ristorante-contenuti * {
   margin-bottom: 10px; }
+
+#modal-about .modal-body {
+  display: flex;
+  flex-direction: column; }
+
+.modal-body heading {
+  margin-bottom: 8px; }
+
+.modal-body article {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px; }
+
+article img {
+  margin-top: 4px;
+  margin-right: 12px;
+  height: 64px;
+  vertical-align: middle; }
+
+#article-us {
+  margin-bottom: 0px;
+  justify-content: center; }
 
 .gallery {
   display: flex;

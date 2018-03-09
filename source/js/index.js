@@ -5,3 +5,12 @@ $(function() {
 		console.log('Qualcosa è andato storto');
 	});
 });
+
+
+
+$('#btn-us').on('click', function () {
+	$('#modal-about').modal('toggle');
+	$('html, body').animate({
+        scrollTop: $("#credits-title").offset().top
+    }, 1000);
+});

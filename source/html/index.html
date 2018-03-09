@@ -33,12 +33,12 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" href="index.html">LA FORCHEITA</a>
+							<a class="navbar-brand" href="index.html"><span><img src="../img/icons/my-icons-collection/png/005-cutlery.png" id="img-brand"></span><span>LA FORCHEITA</span></a>
 						</div>
 						<div id="navbar" class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-right">
 								<li>
-									<a href="#about">Chi siamo</a>
+									<a href="#modal-about" data-toggle="modal">About</a>
 								</li>
 							</ul>
 						</div>
@@ -48,12 +48,12 @@
 		</div>
 		<!-- Wrapper for slides -->
 
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<div id="carousel-intro" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
-				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				<li data-target="#carousel-intro" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-intro" data-slide-to="1"></li>
+				<li data-target="#carousel-intro" data-slide-to="2"></li>
 			</ol>
 
 			<!-- Wrapper for slides -->
@@ -124,359 +124,368 @@
 			</div>
 
 			<!-- Controls -->
-			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<a class="left carousel-control" href="#carousel-intro" role="button" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<a class="right carousel-control" href="#carousel-intro" role="button" data-slide="next">
 				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
 	</header>
 	<main class="container">
-		<div id="containerSection" class="container">
-			<!-- NABUCCO -->
-			<section class="ristoranteGenerico">
-				<!-- https://www.thefork.it/ristorante/ristorante-nabucco/51662 -->
+		<section>
+			<heading>
+				<h1>Selezionati e consigliati da noi</h1>
+			</heading>
+			<div id="containerSection" class="container">
+				<!-- NABUCCO -->
+				<section class="ristoranteGenerico">
+					<!-- https://www.thefork.it/ristorante/ristorante-nabucco/51662 -->
 
-				<picture class="headerSection">
-					<source srcset="../img/section/nabucco/headerNabuccoSmall.jpg" media="(min-width: 500px) and (max-width:1099px)">
-					<source srcset="../img/section/nabucco/headerNabuccoLarge.jpg" media="(min-width: 1100px)">
-					<img src="../img/section/nabucco/headerNabuccoMobileLarge.jpg" alt="Ristorante Nabucco">
-				</picture>
+					<picture class="headerSection">
+						<source srcset="../img/section/nabucco/headerNabuccoSmall.jpg" media="(min-width: 500px) and (max-width:1099px)">
+						<source srcset="../img/section/nabucco/headerNabuccoLarge.jpg" media="(min-width: 1100px)">
+						<img src="../img/section/nabucco/headerNabuccoMobileLarge.jpg" alt="Ristorante Nabucco">
+					</picture>
 
-				<!-- Descrizione del ristorante -->
-				<article>
-					<p class="nameResturant">ristorante nabucco</p>
+					<!-- Descrizione del ristorante -->
+					<article>
+						<p class="nameResturant">ristorante nabucco</p>
 
-					<div class="valutationDiv">
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-					</div>
-					<p class="locationResturant">Via Fiori Chiari 10 20121 Milano Italia </p>
-				</article>
-			</section>
+						<div class="valutationDiv">
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+						</div>
+						<p class="locationResturant">Via Fiori Chiari 10 20121 Milano Italia </p>
+					</article>
+				</section>
 
-			<!-- TAVERNA GOURMET -->
-			<section class="ristorantePizzeria">
-				<!-- https://www.thefork.it/ristorante/la-taverna-gourmet/201350 -->
-				<picture class="headerSection">
-					<source srcset="../img/section/tavernaGourmet/headerTavernaSmall.jpg" media="(min-width: 500px) and (max-width:1099px)">
-					<source srcset="../img/section/tavernaGourmet/headerTavernaLarge.jpg" media="(min-width: 1100px)">
-					<img src="../img/section/tavernaGourmet/headerPizzaioloMobile.jpg" alt="Pizzeria Gourmet">
-				</picture>
+				<!-- TAVERNA GOURMET -->
+				<section class="ristorantePizzeria">
+					<!-- https://www.thefork.it/ristorante/la-taverna-gourmet/201350 -->
+					<picture class="headerSection">
+						<source srcset="../img/section/tavernaGourmet/headerTavernaSmall.jpg" media="(min-width: 500px) and (max-width:1099px)">
+						<source srcset="../img/section/tavernaGourmet/headerTavernaLarge.jpg" media="(min-width: 1100px)">
+						<img src="../img/section/tavernaGourmet/headerPizzaioloMobile.jpg" alt="Pizzeria Gourmet">
+					</picture>
 
-				<!-- Descrizione del ristorante -->
-				<article>
-					<p class="nameResturant">la Taverna Gourmet</p>
-					<div class="valutationDiv">
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-					</div>
-					<p class="locationResturant">Via Andrea Maffei, 12 20135 Milano Italia </p>
-				</article>
-			</section>
+					<!-- Descrizione del ristorante -->
+					<article>
+						<p class="nameResturant">la Taverna Gourmet</p>
+						<div class="valutationDiv">
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+						</div>
+						<p class="locationResturant">Via Andrea Maffei, 12 20135 Milano Italia </p>
+					</article>
+				</section>
 
-			<!-- IL FARO DI MARCO -->
-			<section class="ristorantePesce">
-				<!-- https://www.thefork.it/ristorante/il-faro-di-marco-d-oggiono/271659 -->
+				<!-- IL FARO DI MARCO -->
+				<section class="ristorantePesce">
+					<!-- https://www.thefork.it/ristorante/il-faro-di-marco-d-oggiono/271659 -->
 
-				<picture class="headerSection">
-					<source srcset="../img/section/faroOggiono/headerFaroSmall.jpg" media="(min-width: 500px) and (max-width:1099px)">
-					<source srcset="../img/section/faroOggiono/headerFaroLarge.jpg" media="(min-width: 1100px)">
-					<img src="../img/section/faroOggiono/headerFaroMobile.jpg" alt="Il faro di Oggiono">
-				</picture>
+					<picture class="headerSection">
+						<source srcset="../img/section/faroOggiono/headerFaroSmall.jpg" media="(min-width: 500px) and (max-width:1099px)">
+						<source srcset="../img/section/faroOggiono/headerFaroLarge.jpg" media="(min-width: 1100px)">
+						<img src="../img/section/faroOggiono/headerFaroMobile.jpg" alt="Il faro di Oggiono">
+					</picture>
 
 
-				<!-- Descrizione del ristorante -->
-				<article>
-					<p class="nameResturant">il Faro di Marco d'Oggiono</p>
-					<div class="valutationDiv">
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-					</div>
-					<p class="locationResturant">Via Marco D'Oggiono 20123 Milano Italia </p>
-				</article>
-			</section>
-		</div>
+					<!-- Descrizione del ristorante -->
+					<article>
+						<p class="nameResturant">il Faro di Marco d'Oggiono</p>
+						<div class="valutationDiv">
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+							<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+						</div>
+						<p class="locationResturant">Via Marco D'Oggiono 20123 Milano Italia </p>
+					</article>
+				</section>
+			</div>
+		</section>
 
-		<div class="gallery">
-			<a href="">
+		<section>
+			<heading>
+				<h1>I nostri partner</h1>
+			</heading>
+			<div class="gallery">
+				<a href="">
+					<picture>
+						<div class="comments">
+							<p>ristorante La Furzeina</p>
+						</div>
+						<source media="(max-width: 767px)" sizes="(max-width: 889px) 90vw, 800px" srcset="
+					../img/gallery/1/1_fjzgmp_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+					../img/gallery/1/1_fjzgmp_ar_1_1,c_fill,g_auto__c_scale,w_551.jpg 551w,
+					../img/gallery/1/1_fjzgmp_ar_1_1,c_fill,g_auto__c_scale,w_800.jpg 800w">
+						<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
+					../img/gallery/1/1_fjzgmp_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+					../img/gallery/1/1_fjzgmp_ar_4_3,c_fill,g_auto__c_scale,w_581.jpg 581w,
+					../img/gallery/1/1_fjzgmp_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+						<img sizes="(max-width: 5330px) 10vw, 533px" srcset="
+					../img/gallery/1/1_fjzgmp_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
+					../img/gallery/1/1_fjzgmp_ar_2_3,c_fill,g_auto__c_scale,w_358.jpg 358w,
+					../img/gallery/1/1_fjzgmp_ar_2_3,c_fill,g_auto__c_scale,w_533.jpg 533w" src="../img/gallery/1/1_fjzgmp_ar_2_3,c_fill,g_auto__c_scale,w_533.jpg"
+						alt="">
+					</picture>
+				</a>
+				<a href="">
+					<picture>
+						<div class="comments">
+							<p>ristorante La Furzeina</p>
+						</div>
+						<source media="(max-width: 767px)" sizes="(max-width: 940px) 90vw, 846px" srcset="
+						../img/gallery/2/2_canile_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+						../img/gallery/2/2_canile_ar_1_1,c_fill,g_auto__c_scale,w_583.jpg 583w,
+						../img/gallery/2/2_canile_ar_1_1,c_fill,g_auto__c_scale,w_846.jpg 846w">
+						<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
+						../img/gallery/2/2_canile_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+						../img/gallery/2/2_canile_ar_4_3,c_fill,g_auto__c_scale,w_584.jpg 584w,
+						../img/gallery/2/2_canile_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+						<img sizes="(max-width: 5635px) 20vw, 1127px" srcset="
+						../img/gallery/2/2_canile_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
+						../img/gallery/2/2_canile_ar_4_3,c_fill,g_auto__c_scale,w_761.jpg 761w,
+						../img/gallery/2/2_canile_ar_4_3,c_fill,g_auto__c_scale,w_1127.jpg 1127w" src="../img/gallery/2/2_canile_ar_4_3,c_fill,g_auto__c_scale,w_1127.jpg"
+						alt="">
+					</picture>
+				</a>
 				<picture>
 					<div class="comments">
 						<p>ristorante La Furzeina</p>
 					</div>
+					<source media="(max-width: 767px)" sizes="(max-width: 1091px) 90vw, 982px" srcset="
+						../img/gallery/3/3_iwkxpv_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+						../img/gallery/3/3_iwkxpv_ar_1_1,c_fill,g_auto__c_scale,w_654.jpg 654w,
+						../img/gallery/3/3_iwkxpv_ar_1_1,c_fill,g_auto__c_scale,w_982.jpg 982w">
+					<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
+						../img/gallery/3/3_iwkxpv_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+						../img/gallery/3/3_iwkxpv_ar_4_3,c_fill,g_auto__c_scale,w_583.jpg 583w,
+						../img/gallery/3/3_iwkxpv_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+					<img sizes="(max-width: 6545px) 20vw, 1309px" srcset="
+						../img/gallery/3/3_iwkxpv_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
+						../img/gallery/3/3_iwkxpv_ar_4_3,c_fill,g_auto__c_scale,w_856.jpg 856w,
+						../img/gallery/3/3_iwkxpv_ar_4_3,c_fill,g_auto__c_scale,w_1309.jpg 1309w" src="../img/gallery/3/3_iwkxpv_ar_4_3,c_fill,g_auto__c_scale,w_1309.jpg"
+					alt="">
+				</picture>
+				<picture>
+					<div class="comments">
+						<p>ristorante La Furzeina</p>
+					</div>
+					<source media="(max-width: 767px)" sizes="(max-width: 1138px) 90vw, 1024px" srcset="
+					../img/gallery/4/4_kcclwg_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+					../img/gallery/4/4_kcclwg_ar_1_1,c_fill,g_auto__c_scale,w_699.jpg 699w,
+					../img/gallery/4/4_kcclwg_ar_1_1,c_fill,g_auto__c_scale,w_1024.jpg 1024w">
+					<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
+					../img/gallery/4/4_kcclwg_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+					../img/gallery/4/4_kcclwg_ar_4_3,c_fill,g_auto__c_scale,w_585.jpg 585w,
+					../img/gallery/4/4_kcclwg_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+					<img sizes="(max-width: 6820px) 10vw, 682px" srcset="
+					../img/gallery/4/4_kcclwg_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
+					../img/gallery/4/4_kcclwg_ar_2_3,c_fill,g_auto__c_scale,w_457.jpg 457w,
+					../img/gallery/4/4_kcclwg_ar_2_3,c_fill,g_auto__c_scale,w_682.jpg 682w" src="../img/gallery/4/4_kcclwg_ar_2_3,c_fill,g_auto__c_scale,w_682.jpg"
+					alt="">
+				</picture>
+				<picture>
+					<source media="(max-width: 767px)" sizes="(max-width: 1111px) 90vw, 1000px" srcset="
+					../img/gallery/5/5_ei8jhl_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+					../img/gallery/5/5_ei8jhl_ar_1_1,c_fill,g_auto__c_scale,w_612.jpg 612w,
+					../img/gallery/5/5_ei8jhl_ar_1_1,c_fill,g_auto__c_scale,w_1000.jpg 1000w">
+					<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
+					../img/gallery/5/5_ei8jhl_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+					../img/gallery/5/5_ei8jhl_ar_4_3,c_fill,g_auto__c_scale,w_584.jpg 584w,
+					../img/gallery/5/5_ei8jhl_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+					<img sizes="(max-width: 6665px) 20vw, 1333px" srcset="
+					../img/gallery/5/5_ei8jhl_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
+					../img/gallery/5/5_ei8jhl_ar_4_3,c_fill,g_auto__c_scale,w_806.jpg 806w,
+					../img/gallery/5/5_ei8jhl_ar_4_3,c_fill,g_auto__c_scale,w_1333.jpg 1333w" src="../img/gallery/5/5_ei8jhl_ar_4_3,c_fill,g_auto__c_scale,w_1333.jpg"
+					alt="">
+				</picture>
+				<picture>
+					<source media="(max-width: 767px)" sizes="(max-width: 1200px) 90vw, 1080px" srcset="
+					../img/gallery/6/6_s1iqyt_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+					../img/gallery/6/6_s1iqyt_ar_1_1,c_fill,g_auto__c_scale,w_735.jpg 735w,
+					../img/gallery/6/6_s1iqyt_ar_1_1,c_fill,g_auto__c_scale,w_1080.jpg 1080w">
+					<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
+					../img/gallery/6/6_s1iqyt_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+					../img/gallery/6/6_s1iqyt_ar_4_3,c_fill,g_auto__c_scale,w_586.jpg 586w,
+					../img/gallery/6/6_s1iqyt_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+					<img sizes="(max-width: 7200px) 10vw, 720px" srcset="
+					../img/gallery/6/6_s1iqyt_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
+					../img/gallery/6/6_s1iqyt_ar_2_3,c_fill,g_auto__c_scale,w_483.jpg 483w,
+					../img/gallery/6/6_s1iqyt_ar_2_3,c_fill,g_auto__c_scale,w_720.jpg 720w" src="../img/gallery/6/6_s1iqyt_ar_2_3,c_fill,g_auto__c_scale,w_720.jpg"
+					alt="">
+				</picture>
+				<picture>
+					<source media="(max-width: 767px)" sizes="(max-width: 1250px) 90vw, 1125px" srcset="
+					../img/gallery/10/10_iwrr1f_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+					../img/gallery/10/10_iwrr1f_ar_1_1,c_fill,g_auto__c_scale,w_758.jpg 758w,
+					../img/gallery/10/10_iwrr1f_ar_1_1,c_fill,g_auto__c_scale,w_1125.jpg 1125w">
+					<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
+					../img/gallery/10/10_iwrr1f_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+					../img/gallery/10/10_iwrr1f_ar_4_3,c_fill,g_auto__c_scale,w_584.jpg 584w,
+					../img/gallery/10/10_iwrr1f_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+					<img sizes="(max-width: 7500px) 10vw, 750px" srcset="
+					../img/gallery/10/10_iwrr1f_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
+					../img/gallery/10/10_iwrr1f_ar_2_3,c_fill,g_auto__c_scale,w_498.jpg 498w,
+					../img/gallery/10/10_iwrr1f_ar_2_3,c_fill,g_auto__c_scale,w_750.jpg 750w" src="../img/gallery/10/10_iwrr1f_ar_2_3,c_fill,g_auto__c_scale,w_750.jpg"
+					alt="">
+				</picture>
+				<picture>
+					<source media="(max-width: 767px)" sizes="(max-width: 1000px) 90vw, 900px" srcset="
+					../img/gallery/7/7_nc2mlz_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+					../img/gallery/7/7_nc2mlz_ar_1_1,c_fill,g_auto__c_scale,w_616.jpg 616w,
+					../img/gallery/7/7_nc2mlz_ar_1_1,c_fill,g_auto__c_scale,w_900.jpg 900w">
+					<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
+					../img/gallery/7/7_nc2mlz_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+					../img/gallery/7/7_nc2mlz_ar_4_3,c_fill,g_auto__c_scale,w_584.jpg 584w,
+					../img/gallery/7/7_nc2mlz_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+					<img sizes="(max-width: 6000px) 20vw, 1200px" srcset="
+					../img/gallery/7/7_nc2mlz_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
+					../img/gallery/7/7_nc2mlz_ar_4_3,c_fill,g_auto__c_scale,w_808.jpg 808w,
+					../img/gallery/7/7_nc2mlz_ar_4_3,c_fill,g_auto__c_scale,w_1200.jpg 1200w" src="../img/gallery/7/7_nc2mlz_ar_4_3,c_fill,g_auto__c_scale,w_1200.jpg"
+					alt="">
+				</picture>
+				<picture>
+					<source media="(max-width: 767px)" sizes="(max-width: 1220px) 90vw, 1098px" srcset="
+					../img/gallery/16/16_y1e0g6_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+					../img/gallery/16/16_y1e0g6_ar_1_1,c_fill,g_auto__c_scale,w_748.jpg 748w,
+					../img/gallery/16/16_y1e0g6_ar_1_1,c_fill,g_auto__c_scale,w_1098.jpg 1098w">
+					<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
+					../img/gallery/16/16_y1e0g6_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+					../img/gallery/16/16_y1e0g6_ar_4_3,c_fill,g_auto__c_scale,w_587.jpg 587w,
+					../img/gallery/16/16_y1e0g6_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+					<img sizes="(max-width: 7310px) 10vw, 731px" srcset="
+					../img/gallery/16/16_y1e0g6_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
+					../img/gallery/16/16_y1e0g6_ar_2_3,c_fill,g_auto__c_scale,w_489.jpg 489w,
+					../img/gallery/16/16_y1e0g6_ar_2_3,c_fill,g_auto__c_scale,w_731.jpg 731w" src="../img/gallery/16/16_y1e0g6_ar_2_3,c_fill,g_auto__c_scale,w_731.jpg"
+					alt="">
+				</picture>
+				<picture>
+					<source media="(max-width: 767px)" sizes="(max-width: 878px) 90vw, 790px" srcset="
+					../img/gallery/8/8_y38agl_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+					../img/gallery/8/8_y38agl_ar_1_1,c_fill,g_auto__c_scale,w_463.jpg 463w,
+					../img/gallery/8/8_y38agl_ar_1_1,c_fill,g_auto__c_scale,w_790.jpg 790w">
+					<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
+					../img/gallery/8/8_y38agl_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+					../img/gallery/8/8_y38agl_ar_4_3,c_fill,g_auto__c_scale,w_584.jpg 584w,
+					../img/gallery/8/8_y38agl_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+					<img sizes="(max-width: 5265px) 20vw, 1053px" srcset="
+					../img/gallery/8/8_y38agl_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
+					../img/gallery/8/8_y38agl_ar_4_3,c_fill,g_auto__c_scale,w_715.jpg 715w,
+					../img/gallery/8/8_y38agl_ar_4_3,c_fill,g_auto__c_scale,w_1053.jpg 1053w" src="../img/gallery/8/8_y38agl_ar_4_3,c_fill,g_auto__c_scale,w_1053.jpg"
+					alt="">
+				</picture>
+				<picture>
+					<source media="(max-width: 767px)" sizes="(max-width: 1111px) 90vw, 1000px" srcset="
+						../img/gallery/15/15_uyqq9p_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+						../img/gallery/15/15_uyqq9p_ar_1_1,c_fill,g_auto__c_scale,w_686.jpg 686w,
+						../img/gallery/15/15_uyqq9p_ar_1_1,c_fill,g_auto__c_scale,w_1000.jpg 1000w">
+					<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
+						../img/gallery/15/15_uyqq9p_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+						../img/gallery/15/15_uyqq9p_ar_4_3,c_fill,g_auto__c_scale,w_586.jpg 586w,
+						../img/gallery/15/15_uyqq9p_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+					<img sizes="(max-width: 6660px) 10vw, 666px" srcset="
+						../img/gallery/15/15_uyqq9p_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
+						../img/gallery/15/15_uyqq9p_ar_2_3,c_fill,g_auto__c_scale,w_449.jpg 449w,
+						../img/gallery/15/15_uyqq9p_ar_2_3,c_fill,g_auto__c_scale,w_666.jpg 666w" src="15_uyqq9p_ar_2_3,c_fill,g_auto__c_scale,w_666.jpg"
+					alt="">
+				</picture>
+				<picture>
+					<source media="(max-width: 767px)" sizes="(max-width: 1536px) 90vw, 1382px" srcset="
+					../img/gallery/9/9_lzxa87_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+					../img/gallery/9/9_lzxa87_ar_1_1,c_fill,g_auto__c_scale,w_923.jpg 923w,
+					../img/gallery/9/9_lzxa87_ar_1_1,c_fill,g_auto__c_scale,w_1382.jpg 1382w">
+					<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
+					../img/gallery/9/9_lzxa87_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+					../img/gallery/9/9_lzxa87_ar_4_3,c_fill,g_auto__c_scale,w_582.jpg 582w,
+					../img/gallery/9/9_lzxa87_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+					<img sizes="(max-width: 9900px) 20vw, 1980px" srcset="
+					../img/gallery/9/9_lzxa87_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
+					../img/gallery/9/9_lzxa87_ar_4_3,c_fill,g_auto__c_scale,w_1307.jpg 1307w,
+					../img/gallery/9/9_lzxa87_ar_4_3,c_fill,g_auto__c_scale,w_1980.jpg 1980w" src="../img/gallery/9/9_lzxa87_ar_4_3,c_fill,g_auto__c_scale,w_1980.jpg"
+					alt="">
+				</picture>
+
+				<picture>
+					<source media="(max-width: 767px)" sizes="(max-width: 1536px) 90vw, 1382px" srcset="
+					../img/gallery/11/11_mnyquc_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+					../img/gallery/11/11_mnyquc_ar_1_1,c_fill,g_auto__c_scale,w_930.jpg 930w,
+					../img/gallery/11/11_mnyquc_ar_1_1,c_fill,g_auto__c_scale,w_1382.jpg 1382w">
+					<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
+					../img/gallery/11/11_mnyquc_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+					../img/gallery/11/11_mnyquc_ar_4_3,c_fill,g_auto__c_scale,w_594.jpg 594w,
+					../img/gallery/11/11_mnyquc_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+					<img sizes="(max-width: 9900px) 20vw, 1980px" srcset="
+					../img/gallery/11/11_mnyquc_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
+					../img/gallery/11/11_mnyquc_ar_4_3,c_fill,g_auto__c_scale,w_1316.jpg 1316w,
+					../img/gallery/11/11_mnyquc_ar_4_3,c_fill,g_auto__c_scale,w_1980.jpg 1980w" src="../img/gallery/11/11_mnyquc_ar_4_3,c_fill,g_auto__c_scale,w_1980.jpg"
+					alt="">
+				</picture>
+				<picture>
+					<source media="(max-width: 767px)" sizes="(max-width: 1422px) 90vw, 1280px" srcset="
+					../img/gallery/12/12_yhel1j_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+					../img/gallery/12/12_yhel1j_ar_1_1,c_fill,g_auto__c_scale,w_833.jpg 833w,
+					../img/gallery/12/12_yhel1j_ar_1_1,c_fill,g_auto__c_scale,w_1280.jpg 1280w">
+					<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
+					../img/gallery/12/12_yhel1j_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+					../img/gallery/12/12_yhel1j_ar_4_3,c_fill,g_auto__c_scale,w_582.jpg 582w,
+					../img/gallery/12/12_yhel1j_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+					<img sizes="(max-width: 8530px) 10vw, 853px" srcset="
+					../img/gallery/12/12_yhel1j_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
+					../img/gallery/12/12_yhel1j_ar_2_3,c_fill,g_auto__c_scale,w_548.jpg 548w,
+					../img/gallery/12/12_yhel1j_ar_2_3,c_fill,g_auto__c_scale,w_853.jpg 853w" src="../img/gallery/12/12_yhel1j_ar_2_3,c_fill,g_auto__c_scale,w_853.jpg"
+					alt="">
+				</picture>
+				<picture>
 					<source media="(max-width: 767px)" sizes="(max-width: 889px) 90vw, 800px" srcset="
-				../img/gallery/1/1_fjzgmp_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-				../img/gallery/1/1_fjzgmp_ar_1_1,c_fill,g_auto__c_scale,w_551.jpg 551w,
-				../img/gallery/1/1_fjzgmp_ar_1_1,c_fill,g_auto__c_scale,w_800.jpg 800w">
+					../img/gallery/13/13_gvui7c_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+					../img/gallery/13/13_gvui7c_ar_1_1,c_fill,g_auto__c_scale,w_550.jpg 550w,
+					../img/gallery/13/13_gvui7c_ar_1_1,c_fill,g_auto__c_scale,w_800.jpg 800w">
 					<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-				../img/gallery/1/1_fjzgmp_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-				../img/gallery/1/1_fjzgmp_ar_4_3,c_fill,g_auto__c_scale,w_581.jpg 581w,
-				../img/gallery/1/1_fjzgmp_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-					<img sizes="(max-width: 5330px) 10vw, 533px" srcset="
-				../img/gallery/1/1_fjzgmp_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
-				../img/gallery/1/1_fjzgmp_ar_2_3,c_fill,g_auto__c_scale,w_358.jpg 358w,
-				../img/gallery/1/1_fjzgmp_ar_2_3,c_fill,g_auto__c_scale,w_533.jpg 533w" src="../img/gallery/1/1_fjzgmp_ar_2_3,c_fill,g_auto__c_scale,w_533.jpg"
-					 alt="">
+					../img/gallery/13/13_gvui7c_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+					../img/gallery/13/13_gvui7c_ar_4_3,c_fill,g_auto__c_scale,w_581.jpg 581w,
+					../img/gallery/13/13_gvui7c_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+					<img sizes="(max-width: 5330px) 20vw, 1066px" srcset="
+					../img/gallery/13/13_gvui7c_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
+					../img/gallery/13/13_gvui7c_ar_4_3,c_fill,g_auto__c_scale,w_715.jpg 715w,
+					../img/gallery/13/13_gvui7c_ar_4_3,c_fill,g_auto__c_scale,w_1066.jpg 1066w" src="../img/gallery/13/13_gvui7c_ar_4_3,c_fill,g_auto__c_scale,w_1066.jpg"
+					alt="">
 				</picture>
-			</a>
-			<a href="">
 				<picture>
-					<div class="comments">
-						<p>ristorante La Furzeina</p>
-					</div>
-					<source media="(max-width: 767px)" sizes="(max-width: 940px) 90vw, 846px" srcset="
-					../img/gallery/2/2_canile_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-					../img/gallery/2/2_canile_ar_1_1,c_fill,g_auto__c_scale,w_583.jpg 583w,
-					../img/gallery/2/2_canile_ar_1_1,c_fill,g_auto__c_scale,w_846.jpg 846w">
+					<source media="(max-width: 767px)" sizes="(max-width: 752px) 90vw, 677px" srcset="
+					../img/gallery/14/14_bbnvxk_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+					../img/gallery/14/14_bbnvxk_ar_1_1,c_fill,g_auto__c_scale,w_478.jpg 478w,
+					../img/gallery/14/14_bbnvxk_ar_1_1,c_fill,g_auto__c_scale,w_677.jpg 677w">
 					<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-					../img/gallery/2/2_canile_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-					../img/gallery/2/2_canile_ar_4_3,c_fill,g_auto__c_scale,w_584.jpg 584w,
-					../img/gallery/2/2_canile_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-					<img sizes="(max-width: 5635px) 20vw, 1127px" srcset="
-					../img/gallery/2/2_canile_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
-					../img/gallery/2/2_canile_ar_4_3,c_fill,g_auto__c_scale,w_761.jpg 761w,
-					../img/gallery/2/2_canile_ar_4_3,c_fill,g_auto__c_scale,w_1127.jpg 1127w" src="../img/gallery/2/2_canile_ar_4_3,c_fill,g_auto__c_scale,w_1127.jpg"
-					 alt="">
+					../img/gallery/14/14_bbnvxk_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
+					../img/gallery/14/14_bbnvxk_ar_4_3,c_fill,g_auto__c_scale,w_583.jpg 583w,
+					../img/gallery/14/14_bbnvxk_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
+					<img sizes="(max-width: 4510px) 10vw, 451px" srcset="
+					../img/gallery/14/14_bbnvxk_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
+					../img/gallery/14/14_bbnvxk_ar_2_3,c_fill,g_auto__c_scale,w_309.jpg 309w,
+					../img/gallery/14/14_bbnvxk_ar_2_3,c_fill,g_auto__c_scale,w_451.jpg 451w" src="../img/gallery/14/14_bbnvxk_ar_x2_3,c_fill,g_auto__c_scale,w_451.jpg"
+					alt="">
 				</picture>
-			</a>
-			<picture>
-				<div class="comments">
-					<p>ristorante La Furzeina</p>
-				</div>
-				<source media="(max-width: 767px)" sizes="(max-width: 1091px) 90vw, 982px" srcset="
-					../img/gallery/3/3_iwkxpv_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-					../img/gallery/3/3_iwkxpv_ar_1_1,c_fill,g_auto__c_scale,w_654.jpg 654w,
-					../img/gallery/3/3_iwkxpv_ar_1_1,c_fill,g_auto__c_scale,w_982.jpg 982w">
-				<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-					../img/gallery/3/3_iwkxpv_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-					../img/gallery/3/3_iwkxpv_ar_4_3,c_fill,g_auto__c_scale,w_583.jpg 583w,
-					../img/gallery/3/3_iwkxpv_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-				<img sizes="(max-width: 6545px) 20vw, 1309px" srcset="
-					../img/gallery/3/3_iwkxpv_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
-					../img/gallery/3/3_iwkxpv_ar_4_3,c_fill,g_auto__c_scale,w_856.jpg 856w,
-					../img/gallery/3/3_iwkxpv_ar_4_3,c_fill,g_auto__c_scale,w_1309.jpg 1309w" src="../img/gallery/3/3_iwkxpv_ar_4_3,c_fill,g_auto__c_scale,w_1309.jpg"
-				 alt="">
-			</picture>
-			<picture>
-				<div class="comments">
-					<p>ristorante La Furzeina</p>
-				</div>
-				<source media="(max-width: 767px)" sizes="(max-width: 1138px) 90vw, 1024px" srcset="
-				../img/gallery/4/4_kcclwg_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-				../img/gallery/4/4_kcclwg_ar_1_1,c_fill,g_auto__c_scale,w_699.jpg 699w,
-				../img/gallery/4/4_kcclwg_ar_1_1,c_fill,g_auto__c_scale,w_1024.jpg 1024w">
-				<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-				../img/gallery/4/4_kcclwg_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-				../img/gallery/4/4_kcclwg_ar_4_3,c_fill,g_auto__c_scale,w_585.jpg 585w,
-				../img/gallery/4/4_kcclwg_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-				<img sizes="(max-width: 6820px) 10vw, 682px" srcset="
-				../img/gallery/4/4_kcclwg_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
-				../img/gallery/4/4_kcclwg_ar_2_3,c_fill,g_auto__c_scale,w_457.jpg 457w,
-				../img/gallery/4/4_kcclwg_ar_2_3,c_fill,g_auto__c_scale,w_682.jpg 682w" src="../img/gallery/4/4_kcclwg_ar_2_3,c_fill,g_auto__c_scale,w_682.jpg"
-				 alt="">
-			</picture>
-			<picture>
-				<source media="(max-width: 767px)" sizes="(max-width: 1111px) 90vw, 1000px" srcset="
-				../img/gallery/5/5_ei8jhl_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-				../img/gallery/5/5_ei8jhl_ar_1_1,c_fill,g_auto__c_scale,w_612.jpg 612w,
-				../img/gallery/5/5_ei8jhl_ar_1_1,c_fill,g_auto__c_scale,w_1000.jpg 1000w">
-				<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-				../img/gallery/5/5_ei8jhl_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-				../img/gallery/5/5_ei8jhl_ar_4_3,c_fill,g_auto__c_scale,w_584.jpg 584w,
-				../img/gallery/5/5_ei8jhl_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-				<img sizes="(max-width: 6665px) 20vw, 1333px" srcset="
-				../img/gallery/5/5_ei8jhl_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
-				../img/gallery/5/5_ei8jhl_ar_4_3,c_fill,g_auto__c_scale,w_806.jpg 806w,
-				../img/gallery/5/5_ei8jhl_ar_4_3,c_fill,g_auto__c_scale,w_1333.jpg 1333w" src="../img/gallery/5/5_ei8jhl_ar_4_3,c_fill,g_auto__c_scale,w_1333.jpg"
-				 alt="">
-			</picture>
-			<picture>
-				<source media="(max-width: 767px)" sizes="(max-width: 1200px) 90vw, 1080px" srcset="
-				../img/gallery/6/6_s1iqyt_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-				../img/gallery/6/6_s1iqyt_ar_1_1,c_fill,g_auto__c_scale,w_735.jpg 735w,
-				../img/gallery/6/6_s1iqyt_ar_1_1,c_fill,g_auto__c_scale,w_1080.jpg 1080w">
-				<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-				../img/gallery/6/6_s1iqyt_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-				../img/gallery/6/6_s1iqyt_ar_4_3,c_fill,g_auto__c_scale,w_586.jpg 586w,
-				../img/gallery/6/6_s1iqyt_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-				<img sizes="(max-width: 7200px) 10vw, 720px" srcset="
-				../img/gallery/6/6_s1iqyt_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
-				../img/gallery/6/6_s1iqyt_ar_2_3,c_fill,g_auto__c_scale,w_483.jpg 483w,
-				../img/gallery/6/6_s1iqyt_ar_2_3,c_fill,g_auto__c_scale,w_720.jpg 720w" src="../img/gallery/6/6_s1iqyt_ar_2_3,c_fill,g_auto__c_scale,w_720.jpg"
-				 alt="">
-			</picture>
-			<picture>
-				<source media="(max-width: 767px)" sizes="(max-width: 1250px) 90vw, 1125px" srcset="
-				../img/gallery/10/10_iwrr1f_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-				../img/gallery/10/10_iwrr1f_ar_1_1,c_fill,g_auto__c_scale,w_758.jpg 758w,
-				../img/gallery/10/10_iwrr1f_ar_1_1,c_fill,g_auto__c_scale,w_1125.jpg 1125w">
-				<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-				../img/gallery/10/10_iwrr1f_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-				../img/gallery/10/10_iwrr1f_ar_4_3,c_fill,g_auto__c_scale,w_584.jpg 584w,
-				../img/gallery/10/10_iwrr1f_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-				<img sizes="(max-width: 7500px) 10vw, 750px" srcset="
-				../img/gallery/10/10_iwrr1f_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
-				../img/gallery/10/10_iwrr1f_ar_2_3,c_fill,g_auto__c_scale,w_498.jpg 498w,
-				../img/gallery/10/10_iwrr1f_ar_2_3,c_fill,g_auto__c_scale,w_750.jpg 750w" src="../img/gallery/10/10_iwrr1f_ar_2_3,c_fill,g_auto__c_scale,w_750.jpg"
-				 alt="">
-			</picture>
-			<picture>
-				<source media="(max-width: 767px)" sizes="(max-width: 1000px) 90vw, 900px" srcset="
-				../img/gallery/7/7_nc2mlz_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-				../img/gallery/7/7_nc2mlz_ar_1_1,c_fill,g_auto__c_scale,w_616.jpg 616w,
-				../img/gallery/7/7_nc2mlz_ar_1_1,c_fill,g_auto__c_scale,w_900.jpg 900w">
-				<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-				../img/gallery/7/7_nc2mlz_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-				../img/gallery/7/7_nc2mlz_ar_4_3,c_fill,g_auto__c_scale,w_584.jpg 584w,
-				../img/gallery/7/7_nc2mlz_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-				<img sizes="(max-width: 6000px) 20vw, 1200px" srcset="
-				../img/gallery/7/7_nc2mlz_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
-				../img/gallery/7/7_nc2mlz_ar_4_3,c_fill,g_auto__c_scale,w_808.jpg 808w,
-				../img/gallery/7/7_nc2mlz_ar_4_3,c_fill,g_auto__c_scale,w_1200.jpg 1200w" src="../img/gallery/7/7_nc2mlz_ar_4_3,c_fill,g_auto__c_scale,w_1200.jpg"
-				 alt="">
-			</picture>
-			<picture>
-				<source media="(max-width: 767px)" sizes="(max-width: 1220px) 90vw, 1098px" srcset="
-				../img/gallery/16/16_y1e0g6_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-				../img/gallery/16/16_y1e0g6_ar_1_1,c_fill,g_auto__c_scale,w_748.jpg 748w,
-				../img/gallery/16/16_y1e0g6_ar_1_1,c_fill,g_auto__c_scale,w_1098.jpg 1098w">
-				<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-				../img/gallery/16/16_y1e0g6_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-				../img/gallery/16/16_y1e0g6_ar_4_3,c_fill,g_auto__c_scale,w_587.jpg 587w,
-				../img/gallery/16/16_y1e0g6_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-				<img sizes="(max-width: 7310px) 10vw, 731px" srcset="
-				../img/gallery/16/16_y1e0g6_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
-				../img/gallery/16/16_y1e0g6_ar_2_3,c_fill,g_auto__c_scale,w_489.jpg 489w,
-				../img/gallery/16/16_y1e0g6_ar_2_3,c_fill,g_auto__c_scale,w_731.jpg 731w" src="../img/gallery/16/16_y1e0g6_ar_2_3,c_fill,g_auto__c_scale,w_731.jpg"
-				 alt="">
-			</picture>
-			<picture>
-				<source media="(max-width: 767px)" sizes="(max-width: 878px) 90vw, 790px" srcset="
-				../img/gallery/8/8_y38agl_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-				../img/gallery/8/8_y38agl_ar_1_1,c_fill,g_auto__c_scale,w_463.jpg 463w,
-				../img/gallery/8/8_y38agl_ar_1_1,c_fill,g_auto__c_scale,w_790.jpg 790w">
-				<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-				../img/gallery/8/8_y38agl_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-				../img/gallery/8/8_y38agl_ar_4_3,c_fill,g_auto__c_scale,w_584.jpg 584w,
-				../img/gallery/8/8_y38agl_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-				<img sizes="(max-width: 5265px) 20vw, 1053px" srcset="
-				../img/gallery/8/8_y38agl_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
-				../img/gallery/8/8_y38agl_ar_4_3,c_fill,g_auto__c_scale,w_715.jpg 715w,
-				../img/gallery/8/8_y38agl_ar_4_3,c_fill,g_auto__c_scale,w_1053.jpg 1053w" src="../img/gallery/8/8_y38agl_ar_4_3,c_fill,g_auto__c_scale,w_1053.jpg"
-				 alt="">
-			</picture>
-			<picture>
-				<source media="(max-width: 767px)" sizes="(max-width: 1111px) 90vw, 1000px" srcset="
-					../img/gallery/15/15_uyqq9p_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-					../img/gallery/15/15_uyqq9p_ar_1_1,c_fill,g_auto__c_scale,w_686.jpg 686w,
-					../img/gallery/15/15_uyqq9p_ar_1_1,c_fill,g_auto__c_scale,w_1000.jpg 1000w">
-				<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-					../img/gallery/15/15_uyqq9p_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-					../img/gallery/15/15_uyqq9p_ar_4_3,c_fill,g_auto__c_scale,w_586.jpg 586w,
-					../img/gallery/15/15_uyqq9p_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-				<img sizes="(max-width: 6660px) 10vw, 666px" srcset="
-					../img/gallery/15/15_uyqq9p_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
-					../img/gallery/15/15_uyqq9p_ar_2_3,c_fill,g_auto__c_scale,w_449.jpg 449w,
-					../img/gallery/15/15_uyqq9p_ar_2_3,c_fill,g_auto__c_scale,w_666.jpg 666w" src="15_uyqq9p_ar_2_3,c_fill,g_auto__c_scale,w_666.jpg"
-				 alt="">
-			</picture>
-			<picture>
-				<source media="(max-width: 767px)" sizes="(max-width: 1536px) 90vw, 1382px" srcset="
-				../img/gallery/9/9_lzxa87_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-				../img/gallery/9/9_lzxa87_ar_1_1,c_fill,g_auto__c_scale,w_923.jpg 923w,
-				../img/gallery/9/9_lzxa87_ar_1_1,c_fill,g_auto__c_scale,w_1382.jpg 1382w">
-				<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-				../img/gallery/9/9_lzxa87_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-				../img/gallery/9/9_lzxa87_ar_4_3,c_fill,g_auto__c_scale,w_582.jpg 582w,
-				../img/gallery/9/9_lzxa87_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-				<img sizes="(max-width: 9900px) 20vw, 1980px" srcset="
-				../img/gallery/9/9_lzxa87_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
-				../img/gallery/9/9_lzxa87_ar_4_3,c_fill,g_auto__c_scale,w_1307.jpg 1307w,
-				../img/gallery/9/9_lzxa87_ar_4_3,c_fill,g_auto__c_scale,w_1980.jpg 1980w" src="../img/gallery/9/9_lzxa87_ar_4_3,c_fill,g_auto__c_scale,w_1980.jpg"
-				 alt="">
-			</picture>
+			</div>
+		</section>
 
-			<picture>
-				<source media="(max-width: 767px)" sizes="(max-width: 1536px) 90vw, 1382px" srcset="
-				../img/gallery/11/11_mnyquc_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-				../img/gallery/11/11_mnyquc_ar_1_1,c_fill,g_auto__c_scale,w_930.jpg 930w,
-				../img/gallery/11/11_mnyquc_ar_1_1,c_fill,g_auto__c_scale,w_1382.jpg 1382w">
-				<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-				../img/gallery/11/11_mnyquc_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-				../img/gallery/11/11_mnyquc_ar_4_3,c_fill,g_auto__c_scale,w_594.jpg 594w,
-				../img/gallery/11/11_mnyquc_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-				<img sizes="(max-width: 9900px) 20vw, 1980px" srcset="
-				../img/gallery/11/11_mnyquc_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
-				../img/gallery/11/11_mnyquc_ar_4_3,c_fill,g_auto__c_scale,w_1316.jpg 1316w,
-				../img/gallery/11/11_mnyquc_ar_4_3,c_fill,g_auto__c_scale,w_1980.jpg 1980w" src="../img/gallery/11/11_mnyquc_ar_4_3,c_fill,g_auto__c_scale,w_1980.jpg"
-				 alt="">
-			</picture>
-			<picture>
-				<source media="(max-width: 767px)" sizes="(max-width: 1422px) 90vw, 1280px" srcset="
-				../img/gallery/12/12_yhel1j_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-				../img/gallery/12/12_yhel1j_ar_1_1,c_fill,g_auto__c_scale,w_833.jpg 833w,
-				../img/gallery/12/12_yhel1j_ar_1_1,c_fill,g_auto__c_scale,w_1280.jpg 1280w">
-				<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-				../img/gallery/12/12_yhel1j_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-				../img/gallery/12/12_yhel1j_ar_4_3,c_fill,g_auto__c_scale,w_582.jpg 582w,
-				../img/gallery/12/12_yhel1j_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-				<img sizes="(max-width: 8530px) 10vw, 853px" srcset="
-				../img/gallery/12/12_yhel1j_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
-				../img/gallery/12/12_yhel1j_ar_2_3,c_fill,g_auto__c_scale,w_548.jpg 548w,
-				../img/gallery/12/12_yhel1j_ar_2_3,c_fill,g_auto__c_scale,w_853.jpg 853w" src="../img/gallery/12/12_yhel1j_ar_2_3,c_fill,g_auto__c_scale,w_853.jpg"
-				 alt="">
-			</picture>
-			<picture>
-				<source media="(max-width: 767px)" sizes="(max-width: 889px) 90vw, 800px" srcset="
-				../img/gallery/13/13_gvui7c_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-				../img/gallery/13/13_gvui7c_ar_1_1,c_fill,g_auto__c_scale,w_550.jpg 550w,
-				../img/gallery/13/13_gvui7c_ar_1_1,c_fill,g_auto__c_scale,w_800.jpg 800w">
-				<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-				../img/gallery/13/13_gvui7c_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-				../img/gallery/13/13_gvui7c_ar_4_3,c_fill,g_auto__c_scale,w_581.jpg 581w,
-				../img/gallery/13/13_gvui7c_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-				<img sizes="(max-width: 5330px) 20vw, 1066px" srcset="
-				../img/gallery/13/13_gvui7c_ar_4_3,c_fill,g_auto__c_scale,w_199.jpg 199w,
-				../img/gallery/13/13_gvui7c_ar_4_3,c_fill,g_auto__c_scale,w_715.jpg 715w,
-				../img/gallery/13/13_gvui7c_ar_4_3,c_fill,g_auto__c_scale,w_1066.jpg 1066w" src="../img/gallery/13/13_gvui7c_ar_4_3,c_fill,g_auto__c_scale,w_1066.jpg"
-				 alt="">
-			</picture>
-			<picture>
-				<source media="(max-width: 767px)" sizes="(max-width: 752px) 90vw, 677px" srcset="
-				../img/gallery/14/14_bbnvxk_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
-				../img/gallery/14/14_bbnvxk_ar_1_1,c_fill,g_auto__c_scale,w_478.jpg 478w,
-				../img/gallery/14/14_bbnvxk_ar_1_1,c_fill,g_auto__c_scale,w_677.jpg 677w">
-				<source media="(min-width: 768px) and (max-width: 991px)" sizes="(max-width: 1985px) 40vw, 794px" srcset="
-				../img/gallery/14/14_bbnvxk_ar_4_3,c_fill,g_auto__c_scale,w_308.jpg 308w,
-				../img/gallery/14/14_bbnvxk_ar_4_3,c_fill,g_auto__c_scale,w_583.jpg 583w,
-				../img/gallery/14/14_bbnvxk_ar_4_3,c_fill,g_auto__c_scale,w_794.jpg 794w">
-				<img sizes="(max-width: 4510px) 10vw, 451px" srcset="
-				../img/gallery/14/14_bbnvxk_ar_2_3,c_fill,g_auto__c_scale,w_100.jpg 100w,
-				../img/gallery/14/14_bbnvxk_ar_2_3,c_fill,g_auto__c_scale,w_309.jpg 309w,
-				../img/gallery/14/14_bbnvxk_ar_2_3,c_fill,g_auto__c_scale,w_451.jpg 451w" src="../img/gallery/14/14_bbnvxk_ar_x2_3,c_fill,g_auto__c_scale,w_451.jpg"
-				 alt="">
-			</picture>
-
-
-		</div>
 		<!-- Button trigger modal -->
 		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-ristorante">
 			Launch demo modal
 		</button>
 
-		<!-- Modal -->
+		<!-- Modal ristorante -->
 		<!--nome indirizzo gallery descrizione array recensioni*/-->
 		<div class="modal fade" id="modal-ristorante" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
@@ -553,9 +562,61 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Modal chi siamo -->
+		<div class="modal fade" tabindex="-1" role="dialog" id="modal-about">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h3 class="modal-title">Demo sviluppata all'interno dell'Academy curata da DS Group</h3>
+					</div>
+					<div class="modal-body">
+						<heading>
+							<h4>Tecnologie utilizzate:</h4>
+						</heading>
+						<article>
+							<img src="../img/icons/bootstrap-solid.svg" alt="javascript">
+							<p>
+								<b>Bootstrap: </b> libreria di componenti per lo sviluppo front-end, è stata utilizzata per rendere il sito web più responsive, per la visualizzazione dei singoli ristoranti e di questa presentazione. 
+							</p>
+						</article>
+						<article>
+							<img src="../img/icons/my-icons-collection/png/003-html-5.png" alt="html-5">
+							<p>
+								<b>HTML5: </b> oltre ai tag storici e basilari del linguaggio, sono stati utilizzate anche le semantiche introdotte con HTML5, che vedono coinvolti per esempio i tag section, article ed heading.
+							</p>
+						</article>
+						<article>
+							<img src="../img/icons/my-icons-collection/png/002-css-3.png" alt="css-3">
+							<p>
+								<b>CSS3: anche in questo caso, oltre ai selettori standard di CSS, sono state utilizzate le proprietà flex introdotte in CSS3. </b>
+							</p>
+						</article>  
+						<article>
+							<img src="../img/icons/my-icons-collection/png/001-javascript.png" alt="javascript">
+							<p>
+								<b>Javascript: insieme alla libreria jQuery, utilizzato per rendere dinamico il sito web.</b>
+							</p>
+						</article>
+						<article id="article-us">
+							<a href="#credits-title" id="btn-us" class="btn btn-primary">Chi siamo?</a>
+						</article>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
 	</main>
 	<footer>
-		<div class="credits-title">
+		<div class="credits-title" id="credits-title">
 			<h2>Realizzato da</h2>
 		</div>
 		<div class="credits">
