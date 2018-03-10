@@ -40,11 +40,7 @@ function getLocations(successClb, errorClb) {
 					strnum: "11",
 					postcode: "000000"
 				},
-				gallery: [
-					"../img/",
-					"../img/",
-					"../img/"
-				],
+				gallery: [],
 				description: "",
 				rewiews: [
 					{
@@ -64,11 +60,7 @@ function getLocations(successClb, errorClb) {
 					strnum: "999",
 					postcode: "111111"
 				},
-				gallery: [
-					"../img/",
-					"../img/",
-					"../img/"
-				],
+				gallery: [],
 				description: "",
 				rewiews: [
 					{

@@ -3,7 +3,6 @@ $(function() {
 		displayWaitingScreen();
 		//inizializza le sections con 3 ristoranti
 
-		
 		//inizializzo l'onclick delle sections
 		$('#containerSection').children().on('click', function() {
 			showModalRestaurant(this);
@@ -80,16 +79,20 @@ function createReviewPanel(key, title, text) {
 }
 
 function createCarousel(images) {
-//	var htmlCarousel = 	'<ol class="carousel-indicators">' +
+	if(images.length === 0) {
+		return '';
+	}
+	var htmlCarousel = '';
+//	htmlCarousel = 		'<ol class="carousel-indicators">' +
 //							'<li data-target="#modal_carousel_restaurant" data-slide-to="0" class="active"></li>' +
 //							'<li data-target="#modal_carousel_restaurant" data-slide-to="1"></li>' +
 //						'</ol>' +
-	var htmlCarousel = 	'<div class="carousel-inner" role="listbox">';
+	htmlCarousel += 	'<div class="carousel-inner" role="listbox">';
 	for(var i=0; i < images.length; i++) {
-		if(i === 0) {
-			htmlCarousel +=	'<div class="item active">';
-		} else {
+		if(i !== 0) {
 			htmlCarousel +=	'<div class="item">';
+		} else {
+			htmlCarousel +=	'<div class="item active">';
 		}
 		htmlCarousel +=			'<img src="'+images[i]+'" alt="...">' +
 							'</div>';
