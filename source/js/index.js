@@ -18,6 +18,7 @@ $(function() {
 });	
 
 function showModalRestaurant(whichSect) {
+	var reviewsDiv, ratingDiv, carouselDiv;
 	var id = $(whichSect).attr('data-id');
 
 	getSingularLocation(id, function(resp) {
@@ -27,35 +28,34 @@ function showModalRestaurant(whichSect) {
 		$('#modal_ristorante_indirizzo').text( stringifyObject( resp.address ) );
 
 		//rating part
-		var ratingDiv = $('#modal-ristorante-rating');
+		ratingDiv = $('#modal-ristorante-rating');
 		ratingDiv.empty();
 		for(var i=0; i<resp.rating; i++) {
 			ratingDiv.append('<span class="glyphicon glyphicon-star" aria-hidden="true"></span>');
 		}
 
 		//aggiungo le reviews
-		var reviews = $('#modal_reviews_box');
-		reviews.empty();
-		$.each(resp.rewiews, function(key, rew) {
+		reviewsDiv = $('#modal_reviews_box');
+		reviewsDiv.empty();
+		for(var i=0; i<resp.rewiews.length; i++) {
 			//generate a new collapsable for each review
-			reviews.append( createReviewPanel(key, rew.title, rew.text) );
-		});
+			reviewsDiv.append( createReviewPanel(i, resp.rewiews[i].title, resp.rewiews[i].text) );
+		};
 
 		//initializing carousel
-		var carousel = $('#modal_carousel_restaurant');
-		carousel.empty();
-
-		carousel.append(createCarousel(resp.gallery));
+		carouselDiv = $('#modal_carousel_restaurant');
+		carouselDiv.css('display', 'none');
+		carouselDiv.empty();
+		carouselDiv.append( createCarousel(resp.gallery) );
+		createCarousel('#modal_carousel_restaurant');
 		
 		$('#modal-ristorante').modal();
-		carousel.carousel();
+		carouselDiv.carousel();
 		fixForModalCarousel();
 	}, displayError);
 }
 
-function displayWaitingScreen() {
-
-}
+function displayWaitingScreen() { }
 
 function displayError() {
 	console.log('Qualcosa è andato storto');
@@ -83,7 +83,7 @@ function createCarousel(images) {
 		return '';
 	}
 	var htmlCarousel = '';
-//	htmlCarousel = 		'<ol class="carousel-indicators">' +
+//	htmlCarousel += 		'<ol class="carousel-indicators">' +
 //							'<li data-target="#modal_carousel_restaurant" data-slide-to="0" class="active"></li>' +
 //							'<li data-target="#modal_carousel_restaurant" data-slide-to="1"></li>' +
 //						'</ol>' +
@@ -98,7 +98,6 @@ function createCarousel(images) {
 							'</div>';
 	}
 	htmlCarousel +=		'</div>' +
-					
 						'<a class="left carousel-control" href="#modal_carousel_restaurant" role="button" data-slide="prev">' +
 							'<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>' +
 							'<span class="sr-only">Previous</span>' +
@@ -111,12 +110,16 @@ function createCarousel(images) {
 }
 
 function fixForModalCarousel() {
-	setTimeout(function() {
-		/* Il carousel non viene inizializzato correttamente quando si effettua l'animazione
-		 * questa funzione aspetta che l'animazione venga completata prima di forzare
-		 * il cambio di immagine del carousel cliccando automaticamente su uno dei due bottoni 
-		 * per ciclare le immagini, un delay superiore a 150 dovrebbe funzionare comnque
-		*/
+	setTimeout(function () {
+		$('#modal_carousel_restaurant').slideDown();
+	}, 650);
+
+	/*
+	setTimeout( function() {
+		// Il carousel non viene inizializzato correttamente quando si effettua l'animazione
+		// questa funzione forza il carousel ad aggiornarsi cambiando l'immagine
+		
 		$('#modal_carousel_restaurant a:first').click();
-	}, 605);
+	}, 400);
+	*/
 }
