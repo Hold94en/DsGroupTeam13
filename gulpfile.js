@@ -45,5 +45,7 @@ gulp.task('build', function () {
 		.pipe(concat('bundle.js'))
 		.pipe(uglify()).pipe(sourcemaps.write())
 		.pipe(gulp.dest('dist'));
-	gulp.src('source/js/fetchLocation.js').pipe(gulp.dest('dist'));
+	gulp.src('source/js/fetchLocation.js')
+	.pipe(replace('../img/', 'img/'))
+	.pipe(gulp.dest('dist'));
 });
