@@ -403,6 +403,7 @@ picture:hover .comments {
 .modal-content {
   margin: auto;
   display: flex;
+  flex-direction: column;
   width: 80%;
   max-width: 700px; }
 

@@ -5,13 +5,13 @@ function getLocations(successClb, errorClb) {
 		locations:[
 			{
 				id: "1",
-				name: "Ristorante 1",
+				name: "Ristorante Nabucco",
 				address: {
 					state: "Italia",
 					city: "Milano",
-					street: "via non so",
-					strnum: "123",
-					postcode: "09887"
+					street: "Via Fiori Chiari",
+					strnum: "10",
+					postcode: "20121"
 				},
 				gallery: [
 					"../img/restaurants/restaurant1/chairs-2179044.jpg",
@@ -32,18 +32,17 @@ function getLocations(successClb, errorClb) {
 			},
 			{
 				id: "2",
-				name: "Ristorante 2",
+				name: "La Taverna Gourmet",
 				address: {
 					state: "Italia",
 					city: "Milano",
-					street: "Via Roma",
-					strnum: "11",
-					postcode: "000000"
+					street: "Via Andrea Maffei",
+					strnum: "12",
+					postcode: "20135"
 				},
 				gallery: [
-					"../img/",
-					"../img/",
-					"../img/"
+					"../img/restaurants/restaurant1/chairs-2179044.jpg",
+					"../img/restaurants/restaurant1/pexels-photo-225448.jpeg",
 				],
 				description: "",
 				rewiews: [
@@ -52,22 +51,21 @@ function getLocations(successClb, errorClb) {
 						text: "Lorem ipsum"
 					}
 				],
-				rating: 3
+				rating: 5
 			},
 			{
 				id: "3",
-				name: "Ristorante 3",
+				name: "Il Faro Di Marco D'Oggiono",
 				address: {
 					state: "Italia",
-					city: "Torino",
-					street: "Via ###",
+					city: "Milano",
+					street: "Via Marco D'Oggiono",
 					strnum: "999",
-					postcode: "111111"
+					postcode: "20123"
 				},
 				gallery: [
-					"../img/",
-					"../img/",
-					"../img/"
+					"../img/restaurants/restaurant1/chairs-2179044.jpg",
+					"../img/restaurants/restaurant1/pexels-photo-225448.jpeg",
 				],
 				description: "",
 				rewiews: [
@@ -80,7 +78,7 @@ function getLocations(successClb, errorClb) {
 						text: "Lorem ipsum"
 					}
 				],
-				rating: 1
+				rating: 5
 			}
 		]
 	};
