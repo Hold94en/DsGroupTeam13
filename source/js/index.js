@@ -118,7 +118,6 @@ function fixForModalCarousel() {
 	setTimeout( function() {
 		// Il carousel non viene inizializzato correttamente quando si effettua l'animazione
 		// questa funzione forza il carousel ad aggiornarsi cambiando l'immagine
-		
 		$('#modal_carousel_restaurant a:first').click();
 	}, 400);
 	*/
