@@ -1,6 +1,5 @@
-//jshint esversion: 6
-
-function getLocations(successClb, errorClb) {
+function getLocations(successClb) {	// jshint ignore:line
+	'use strict';
 	var obj = {
 		locations:[
 			{
@@ -86,14 +85,16 @@ function getLocations(successClb, errorClb) {
 	successClb(obj.locations);
 }
 
-function getSingularLocation(id, successClb, errorClb) {
+function getSingularLocation(id, successClb) {
+	'use strict';
 	//idealy i would have set up a different server request or used an existing function
 	getLocations(function(locs) {	//ask for data and send a function to run when data arrive
 		successClb(locs[id]);		//return the data to the index.js page
-	}, errorClb);
+	});
 }
 
-function stringifyObject(obj, sep = ' ') {
+function stringifyObject(obj, sep) {
+	'use strict';
 	var res = '';
 	for(var o in obj) {
 		if(o) {

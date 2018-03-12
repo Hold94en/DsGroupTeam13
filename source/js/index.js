@@ -1,13 +1,12 @@
-$(function() {
-	getLocations(function(ristoranti) {		//Success
-		displayWaitingScreen();
-		//inizializza le sections con 3 ristoranti
+/* globals $ */
+/* globals getSingularLocation, stringifyObject */
 
-		//inizializzo l'onclick delle sections
-		$('#containerSection').children().on('click', function() {
-			showModalRestaurant(this);
-		});
-	}, displayError);
+$(function() {
+	'use strict';
+	//inizializzo l'onclick delle sections
+	$('#containerSection').children().on('click', function() {
+		showModalRestaurant(this);
+	});
 
 	$('#btn-us').on('click', function () {
 		$('#modal-about').modal('toggle');
@@ -18,6 +17,7 @@ $(function() {
 });	
 
 function showModalRestaurant(whichSect) {
+	'use strict';
 	var reviewsDiv, ratingDiv, carouselDiv;
 	var id = $(whichSect).attr('data-id');
 
@@ -25,7 +25,7 @@ function showModalRestaurant(whichSect) {
 		//modifico il testo del modale
 		$('#modal_ristorante_nome').text( resp.name );
 		$('#modal_ristorante_descrizione').text( resp.description );
-		$('#modal_ristorante_indirizzo').text( stringifyObject( resp.address ) );
+		$('#modal_ristorante_indirizzo').text( stringifyObject( resp.address, ' ' ) );
 
 		//rating part
 		ratingDiv = $('#modal-ristorante-rating');
@@ -37,10 +37,10 @@ function showModalRestaurant(whichSect) {
 		//aggiungo le reviews
 		reviewsDiv = $('#modal_reviews_box');
 		reviewsDiv.empty();
-		for(var i=0; i<resp.rewiews.length; i++) {
+		for(i=0; i<resp.rewiews.length; i++) {
 			//generate a new collapsable for each review
 			reviewsDiv.append( createReviewPanel(i, resp.rewiews[i].title, resp.rewiews[i].text) );
-		};
+		}
 
 		//initializing carousel
 		carouselDiv = $('#modal_carousel_restaurant');
@@ -52,16 +52,11 @@ function showModalRestaurant(whichSect) {
 		$('#modal-ristorante').modal();
 		carouselDiv.carousel();
 		fixForModalCarousel();
-	}, displayError);
-}
-
-function displayWaitingScreen() { }
-
-function displayError() {
-	console.log('Qualcosa è andato storto');
+	});
 }
 
 function createReviewPanel(key, title, text) {
+	'use strict';
 	return '<div class="panel panel-default">' +
 				'<div class="panel-heading" role="tab" id="headingOne">' +
 					'<h4 class="panel-title">' +
@@ -79,6 +74,7 @@ function createReviewPanel(key, title, text) {
 }
 
 function createCarousel(images) {
+	'use strict';
 	if(images.length === 0) {
 		return '';
 	}
@@ -110,6 +106,7 @@ function createCarousel(images) {
 }
 
 function fixForModalCarousel() {
+	'use strict';
 	setTimeout(function () {
 		$('#modal_carousel_restaurant').slideDown();
 	}, 650);
